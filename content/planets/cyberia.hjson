@@ -1,0 +1,36 @@
+
+  name: "cyberia"
+  localizedName: "Киберия"
+  description: "Место, где код обретает форму."
+  parent: "sun"
+  radius: 1.0
+  generator: "none"
+  sectorSize: 1
+  accessible: true
+  alwaysUnlocked: true
+  startSector: 0
+  allowLaunchToNumbered: false
+  allowSectorInvasion: false
+  //defaultCore: null
+  iconColor: "00ffff"
+  orbitRadius: 90
+  hasAtmosphere: false
+  drawOrbit: true
+  bloom: true
+  updateLighting: true
+  mesh: {
+    type: "NoiseMesh"
+    seed: 7452
+    divisions: 5
+    radius: 1.0
+    color1: "000000"
+    color2: "00ff00"
+    colorOct: 4
+    colorPersistence: 0.5
+    colorScale: 0.5
+    colorThreshold: 0.5
+    octaves: 4
+    persistence: 1
+    scale: 0.75
+    mag: 0
+  }
