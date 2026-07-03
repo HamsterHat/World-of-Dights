@@ -14,7 +14,8 @@
   //defaultCore: null
   iconColor: "00ffff"
   orbitRadius: 90
-  hasAtmosphere: false
+  hasAtmosphere: true
+  atmosphereColor: "00ffcc"
   drawOrbit: true
   bloom: true
   updateLighting: true
@@ -28,9 +29,9 @@
     colorOct: 4
     colorPersistence: 0.5
     colorScale: 0.5
-    colorThreshold: 0.5
+    colorThreshold: 0.9
     octaves: 4
     persistence: 1
     scale: 0.75
-    mag: 0
+    mag: 1
   }
