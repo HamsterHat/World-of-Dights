@@ -11,7 +11,7 @@
   startSector: 0
   allowLaunchToNumbered: false
   allowSectorInvasion: false
-  //defaultCore: null
+  defaultCore: core-asm
   iconColor: "00ffff"
   orbitRadius: 90
   hasAtmosphere: true
