@@ -26,4 +26,30 @@ trailLength: 20
 engineSize: 0
 engineOffset: 0
 
+range: 64
+
+weapons: [
+  {
+    mirror: false
+    x: 0
+    y: 2
+    reload: 20
+    shootSound: laser
+    rotate: true
+    
+    bullet: {
+      type: LaserBulletType
+      damage: 16
+      length: 64
+      width: 4
+      colors: [
+        00ff00
+        ffffff
+      ]
+    }
+  }
+]
+
+
+
 research: assembler-core
