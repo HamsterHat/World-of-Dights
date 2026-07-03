@@ -35,7 +35,7 @@ weapons: [
     y: 2
     reload: 20
     shootSound: laser
-    rotate: true
+    rotate: false
     
     bullet: {
       type: LaserBulletType
