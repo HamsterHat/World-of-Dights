@@ -1,0 +1,29 @@
+type: flying
+flying: true
+
+
+health: 32
+armor: 0
+
+
+speed: 3
+rotateSpeed: 25
+
+
+buildSpeed: 5
+itemCapacity: 8
+
+
+mineTier: 1
+mineSpeed: 8
+
+outlineColor: 00ff00
+lightColor: 00ff00
+lightRadius: 15
+trailColor: 00ff00
+trailLength: 20
+
+engineSize: 0
+engineOffset: 0
+
+research: assembler-core
