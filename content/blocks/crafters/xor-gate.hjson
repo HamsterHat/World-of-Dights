@@ -1,0 +1,59 @@
+type: GenericCrafter
+
+size: 2
+health: 256
+hasItems: true
+itemCapacity: 10
+
+
+craftTime: 30
+
+
+consumes: {
+  items: [
+    zero/1
+    one/1
+  ]
+}
+
+
+outputItem: bit/1
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: 00ff33ff
+      alpha: 1.0
+      glowIntensity: 0.8
+    }
+  ]
+}
+
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 4
+  length: 12
+  lifetime: 24
+  colorFrom: 00ff33ff
+  colorTo: 001100ff
+  sizeFrom: 1.5
+  sizeTo: 0
+}
+
+
+requirements: [
+  zero/64
+  one/64
+]
+
+category: crafting
+research: core-asm
+researchCostMultiplier: 0.5
