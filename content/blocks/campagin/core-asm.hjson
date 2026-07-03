@@ -1,0 +1,23 @@
+type: CoreBlock
+size: 3
+health: 2048
+armor: 5
+itemCapacity: 4096
+
+unitType: system
+
+category: effect
+alwaysUnlocked: true
+
+
+requirements: [
+  zero/4096
+  one/4096
+]
+
+
+research: {
+  root: true
+  planet: cyberia
+  name: cyberia
+}
