@@ -1,7 +1,7 @@
 type: GenericCrafter
 size: 2
 health: 320
-craftTime: 60.0)
+craftTime: 60.0
 
 
 consumes: {
