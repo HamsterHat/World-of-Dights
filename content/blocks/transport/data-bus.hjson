@@ -5,7 +5,7 @@ speed: 16
 //junctionReplacement: null
 
 requirements: [
-  byte/1
+  one/1
 ]
 
 category: distribution
@@ -13,6 +13,6 @@ category: distribution
 research: {
   parent: core-asm
   requirements: [
-    byte/2
+    one/2
   ]
 }
