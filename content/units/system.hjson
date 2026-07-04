@@ -55,4 +55,4 @@ immunities: [
   reaperDamage
 ]
 
-research: assembler-core
+research: core-asm
