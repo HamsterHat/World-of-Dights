@@ -1,0 +1,45 @@
+type: Drill
+size: 2
+health: 128
+
+
+drillTime: 280.0
+
+
+tier: 1
+
+
+warmupSpeed: 0.0015
+
+
+rotateSpeed: 4.5
+
+
+heatColor: 00ffffff
+
+
+drawMineItem: true
+
+
+drillEffect: {
+  type: ParticleEffect
+  particles: 3
+  length: 8
+  lifetime: 20
+  colorFrom: 00ffffff
+  colorTo: 002244ff
+  sizeFrom: 1.5
+  sizeTo: 0.0
+  cone: 360
+}
+
+requirements: [
+  byte/2
+  bit/16
+  one/8
+  zero/8
+]
+
+category: production
+research: core-asm
+researchCostMultiplier: 0.5
