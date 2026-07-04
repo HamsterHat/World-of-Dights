@@ -19,6 +19,8 @@ weapons: [
       despawnHit: true
       splashDamage: 64
       splashDamageRadius: 8
+      status: glitched
+      statusDuration: 300
         lifetime: 0
         hitEffect: {
           type: ParticleEffect
