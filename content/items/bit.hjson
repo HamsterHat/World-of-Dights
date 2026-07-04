@@ -1,3 +1,4 @@
 charge: 0.1
 color: 00ffff
-cost: 0.5
+research: zero
+cost: 1.0

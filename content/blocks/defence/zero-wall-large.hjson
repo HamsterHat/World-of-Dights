@@ -1,0 +1,11 @@
+type: Wall
+size: 2
+health: 1024
+
+requirements: [
+  byte/4
+]
+
+category: defense
+research: zero-wall
+researchCostMultiplier: 2

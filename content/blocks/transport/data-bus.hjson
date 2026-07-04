@@ -1,0 +1,19 @@
+// спрайты скоро будут, а ещё в деревне я не могу писать через телеграмм (смогу только через часа три)
+type: duct
+size: 1
+health: 8
+speed: 16
+//junctionReplacement: null
+
+requirements: [
+  one/1
+]
+
+category: distribution
+
+research: {
+  parent: core-asm
+  requirements: [
+    one/2
+  ]
+}

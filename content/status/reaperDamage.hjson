@@ -1,0 +1,14 @@
+damage: 16.0
+speedMultiplier: -1
+
+
+effect: {
+  type: ParticleEffect
+  particles: 2
+  length: 4
+  lifetime: 15
+  colorFrom: 00ffffff
+  colorTo: 002244ff
+  sizeFrom: 1.0
+  sizeTo: 0.0
+}

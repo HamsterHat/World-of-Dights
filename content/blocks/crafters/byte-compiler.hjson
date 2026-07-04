@@ -1,0 +1,55 @@
+type: GenericCrafter
+size: 2
+health: 320
+craftTime: 60.0
+
+
+consumes: {
+  items: [
+    bit/8
+  ]
+}
+
+
+outputItem: byte/1
+
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: 00ffffff
+      alpha: 1.0
+      glowIntensity: 1.2
+    }
+  ]
+}
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 8
+  length: 14
+  lifetime: 30
+  colorFrom: 00ffffff
+  colorTo: 002244ff
+  sizeFrom: 2.0
+  sizeTo: 0
+}
+
+
+requirements: [
+  bit/32
+  one/16
+  zero/16
+]
+
+researchCostMultiplier: 2
+
+category: crafting
+research: xor-gate

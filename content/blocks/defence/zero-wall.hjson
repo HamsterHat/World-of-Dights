@@ -1,0 +1,11 @@
+type: Wall
+size: 1
+health: 256
+
+requirements: [
+  byte/1
+]
+
+category: defense
+research: core-asm
+researchCostMultiplier: 2

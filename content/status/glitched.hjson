@@ -1,0 +1,34 @@
+speedMultiplier: 0.7
+buildSpeedMultiplier: 0.0
+intervalDamageTime: 60.0
+intervalDamage: 8
+damage: 0
+disarm: true
+color: ff0033ff
+outline: true
+effect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 5
+      length: 10
+      lifetime: 20
+      colorFrom: ff0033ff
+      colorTo: 55001100
+      sizeFrom: 2.0
+      sizeTo: 0.0
+    }
+    {
+      type: ParticleEffect
+      particles: 3
+      length: 6
+      lifetime: 12
+      colorFrom: 00ffffff
+      colorTo: 00224400
+      sizeFrom: 1.5
+      sizeTo: 0.0
+    }
+  ]
+}
+
