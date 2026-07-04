@@ -18,6 +18,7 @@ ammoTypes: {
     backColor: 005555ff
     width: 4
     height: 8
+    knockback: 2
   }
 }
 
