@@ -1,0 +1,12 @@
+type: Sorter
+size: 1
+health: 64
+
+researchCostMultiplier: 2.0
+
+requirements: [
+  byte/1
+]
+
+category: distribution
+research: data-router
