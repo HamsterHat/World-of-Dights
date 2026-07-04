@@ -3,7 +3,7 @@ type: duct
 size: 1
 health: 8
 speed: 16
-//junctionReplacement: null
+junctionReplacement: data-junction
 
 requirements: [
   one/1
