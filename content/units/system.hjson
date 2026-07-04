@@ -17,10 +17,10 @@ itemCapacity: 8
 mineTier: 1
 mineSpeed: 8
 
-outlineColor: 00ff00
-lightColor: 00ff00
+outlineColor: 00ffff
+lightColor: 00ffff
 lightRadius: 15
-trailColor: 00ff00
+trailColor: 00ffff
 trailLength: 20
 
 engineSize: 0
@@ -43,7 +43,7 @@ weapons: [
       length: 64
       width: 4
       colors: [
-        00ff00
+        00ffff
         ffffff
       ]
     }
