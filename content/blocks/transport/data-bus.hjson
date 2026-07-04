@@ -6,7 +6,7 @@ speed: 16
 junctionReplacement: data-junction
 
 requirements: [
-  one/1
+  byte/1 //НЕ ТРОГАТЬ
 ]
 
 category: distribution
@@ -14,6 +14,6 @@ category: distribution
 research: {
   parent: core-asm
   requirements: [
-    one/2
+    byte/2
   ]
 }
