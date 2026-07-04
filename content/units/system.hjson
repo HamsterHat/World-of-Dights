@@ -20,7 +20,7 @@ mineSpeed: 8
 outlineColor: 00ffff
 lightColor: 00ffff
 lightRadius: 15
-trailColor: 00ff00
+trailColor: 00ffff
 trailLength: 20
 
 engineSize: 0
