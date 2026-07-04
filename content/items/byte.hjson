@@ -1,14 +1,5 @@
-type: item
-
-
+// радиоактивность, взрывоопасность и т.д. по умолчанию ноль
+// а ещё ты заряд забыл
 color: 00ffff
-
-
-explosiveness: 0.0
-
-
-radioactivity: 0.0
-
-
 cost: 1.0
 research: bit
