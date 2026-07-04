@@ -1,0 +1,31 @@
+type: crawl
+speed: 1.4
+health: 64
+controller: SuicideAI
+weapons: [
+  {
+    shootCone: 360
+    reload: 0
+    bullet: {
+      type: BulletType
+      collidesTiles: false
+      hitSound: explosion
+      killShooter: true
+      damage: 0
+      despawnHit: true
+      splashDamage: 64
+      splashDamageRadius: 8
+        lifetime: 0
+        hitEffect: {
+          type: ParticleEffect
+          particles: 12
+          length: 32
+          lifetime: 25
+          colorFrom: ff0033ff
+          colorTo: 00ffff00
+          sizeFrom: 3.0
+          sizeTo: 0.0
+        }
+    }
+  }
+]
