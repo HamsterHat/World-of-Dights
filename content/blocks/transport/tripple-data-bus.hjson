@@ -1,8 +1,8 @@
 type: StackConveyor
 size: 1
 health: 24
-speed: 16
-itemCapacity: 16
+speed: 1
+itemCapacity: 3
 
 
 glowColor: 00ffffff  
