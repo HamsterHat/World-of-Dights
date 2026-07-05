@@ -1,6 +1,7 @@
 type: GenericCrafter
 size: 2
-health: 320
+health: 256
+itemCapacity: 16
 craftTime: 60.0
 
 
