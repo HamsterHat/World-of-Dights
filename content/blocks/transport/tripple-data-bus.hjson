@@ -1,6 +1,6 @@
 type: StackConveyor
 size: 1
-health: 128
+health: 24
 speed: 16
 itemCapacity: 16
 
