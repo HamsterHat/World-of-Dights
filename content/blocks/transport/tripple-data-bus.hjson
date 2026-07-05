@@ -1,7 +1,7 @@
 type: StackConveyor
 size: 1
 health: 24
-speed: 1
+speed: 0.1
 itemCapacity: 3
 
 
@@ -33,7 +33,7 @@ loadEffect: {
       lifetime: 16
       sizeFrom: 2.0
       sizeTo: 0.0
-      colorFrom: 00ff33ff
+      colorFrom: 00ffaaff
       colorTo: 00110000
     }
   ]
