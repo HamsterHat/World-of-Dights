@@ -27,7 +27,7 @@
   ],
   "category": "crafting",
   "research": {
-    "parent": "core-asm",
+    "parent": "not-gate-0",
     "requirements": [
       {"item": "zero", "amount": 16},
       {"item": "one", "amount": 16}
