@@ -15,7 +15,8 @@ consumes: {
 outputItem: byte/1
 
 
-
+// НЕ ТРОГАТЬ
+// карается с помощью гигатапка
 drawer: {
   type: DrawMulti
   drawers: [
