@@ -55,5 +55,5 @@ requirements: [
 ]
 
 category: crafting
-research: core-asm
+research: not-gate-0
 researchCostMultiplier: 0.5
