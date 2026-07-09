@@ -1,1 +1,20 @@
-не
+type: ArmoredDuct
+size: 1
+health: 24
+speed: 2.5
+// формула скорости: 60÷x. при 2.5 это 24, а это 8×3
+junctionReplacement: data-junction
+
+requirements: [
+  byte/3
+]
+// посмотри на эти аппетитные байты! их целых три! так и хочется сделать ам ам ам
+
+category: distribution
+
+research: {
+  parent: data-bus
+  requirements: [
+    byte/64
+  ]
+}
