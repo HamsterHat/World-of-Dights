@@ -57,6 +57,10 @@
         "hitSound": "shieldHit",
         "hitSoundVolume": 0.3,
         "despawnEffect": "none",
+        "weaveMag": 4.0,
+        "weaveScale": 20.0,
+        "weaveRandom": true,
+        "weaveOffset": 0,
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [
