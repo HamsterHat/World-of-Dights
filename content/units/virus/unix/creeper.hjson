@@ -10,6 +10,7 @@ weapons: [
   {
     shootCone: 360
     reload: 0
+    shootOnDeath: true
     bullet: {
       type: BulletType
       collidesTiles: false
