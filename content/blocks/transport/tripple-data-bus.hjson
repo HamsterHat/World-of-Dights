@@ -1,4 +1,5 @@
 type: Duct
+armored: true
 size: 1
 health: 24
 speed: 2.5
