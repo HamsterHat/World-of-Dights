@@ -1,0 +1,185 @@
+{
+  "type": "legs",
+  "legLength": 16,
+  "legCount": 8,
+  "hitSize": 18,
+  "legGroupSize": 2,
+  "legBaseOffset": 6,
+  "legExtension": -2.75,
+  "legMoveSpace": 1.1,
+  "legForwardScl": 2,
+  "legMaxLength": 1.15,
+  "lockLegBase": true,
+  "speed": 0.8,
+  "drag": 0.15,
+  "health": 8192,
+  "armor": 20,
+  "outlineColor": "32323200",
+  "weapons": [
+    {
+      "shootCone": 360,
+      "reload": 55,
+      "shootSound": "shootCleroi",
+      "mirror": true,
+      "alternate": true,
+      "x": 0,
+      "y": 0,
+      "shootY": 0,
+      "rotate": true,
+      "baseRotation": 180,
+      "shoot": {
+        "type": "ShootSpread",
+        "shots": 10,
+        "spread": 0
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "speed": 5,
+        "accel": 0.15,
+        "lifetime": 37.5,
+        "damage": 30,
+        "width": 0,
+        "height": 0,
+        "trailColor": "dddddd",
+        "trailLength": 10,
+        "trailWidth": 1,
+        "lifeScaleRandMin": 0.75,
+        "backColor": "eeeeee",
+        "frontColor": "ffffff",
+        "followAimSpeed": 8.5,
+        "inaccuracy": 5,
+        "recoil": 0.75,
+        "smokeEffect": "none",
+        "despawnHit": true,
+        "hitSound": "shieldHit",
+        "hitSoundVolume": 0.3,
+        "despawnEffect": "none",
+        "weaveMag": 4.0,
+        "weaveScale": 20.0,
+        "weaveOffset": 1,
+        "weaveRandom": true,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 4.25,
+              "interp": "pow3Out",
+              "particles": 6,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "lifetime": 30,
+              "length": 22.5
+            },
+            {
+              "type": "ParticleEffect",
+              "interp": "pow3Out",
+              "particles": 5,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "line": true,
+              "lenFrom": 6,
+              "lenTo": 3,
+              "strokeFrom": 3,
+              "lifetime": 30,
+              "length": 22.5
+            },
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 12,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 45,
+              "interp": "pow3Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "length": 35,
+              "baseLength": 10,
+              "lifetime": 37.5,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "interp": "pow3Out",
+              "sizeFrom": 19,
+              "particles": 2,
+              "spin": -2,
+              "region": "error"
+            },
+            {
+              "type": "ParticleEffect",
+              "length": 35,
+              "baseLength": 10,
+              "lifetime": 37.5,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "interp": "pow3Out",
+              "sizeFrom": 19,
+              "particles": 2,
+              "spin": 2,
+              "region": "error"
+            }
+          ]
+        },
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 4.25,
+              "interp": "pow3Out",
+              "particles": 1,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "cone": 9,
+              "lifetime": 30,
+              "length": 22.5
+            },
+            {
+              "type": "ParticleEffect",
+              "interp": "pow3Out",
+              "particles": 1,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "cone": 9,
+              "line": true,
+              "lenFrom": 6,
+              "lenTo": 3,
+              "strokeFrom": 3,
+              "lifetime": 30,
+              "length": 22.5
+            },
+            {
+              "type": "ParticleEffect",
+              "length": 35,
+              "lifetime": 30,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "interp": "pow3Out",
+              "sizeFrom": 19,
+              "particles": 1,
+              "spin": -2,
+              "region": "error",
+              "cone": 12
+            },
+            {
+              "type": "ParticleEffect",
+              "length": 35,
+              "lifetime": 30,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "interp": "pow3Out",
+              "sizeFrom": 19,
+              "particles": 1,
+              "spin": 2,
+              "region": "error",
+              "cone": 12
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
