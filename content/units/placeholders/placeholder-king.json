@@ -31,11 +31,9 @@
       "shootY": 0,
       "rotate": false,
       "shoot": {
-        "type": "ShootBarrel",
+        "type": "ShootSpread",
         "shots": 10,
-        "barrels": [
-          [-10, 0.5, 105]
-        ]
+        "spread": 0
       },
       "bullet": {
         "type": "BasicBulletType",
