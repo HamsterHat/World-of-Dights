@@ -24,8 +24,7 @@
       "alternate": true,
       "x": 0,
       "y": 0,
-      "shootY": 0,
-      "rotate": true,
+      "rotate": false,
       "baseRotation": 180,
       "shoot": {
         "type": "ShootSpread",
@@ -46,9 +45,8 @@
         "lifeScaleRandMin": 0.75,
         "backColor": "eeeeee",
         "frontColor": "ffffff",
-        "followAimSpeed": 8.5,
         "inaccuracy": 5,
-        "recoil": 0.75,
+        "recoil": 0.3,
         "smokeEffect": "none",
         "despawnHit": true,
         "hitSound": "shieldHit",
@@ -56,7 +54,6 @@
         "despawnEffect": "none",
         "weaveMag": 4.0,
         "weaveScale": 20.0,
-        "weaveOffset": 1,
         "weaveRandom": true,
         "hitEffect": {
           "type": "MultiEffect",
