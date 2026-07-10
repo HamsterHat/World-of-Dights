@@ -9,4 +9,9 @@ requirements: [
 ]
 
 category: distribution
-research: data-router
+research: {
+  parent: data-router
+  requirements: [
+    byte/2
+  ]
+}
