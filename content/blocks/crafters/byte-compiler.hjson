@@ -51,7 +51,12 @@ requirements: [
   zero/16
 ]
 
-researchCostMultiplier: 2
+
 
 category: crafting
-research: xor-gate
+research: {
+  parent: xor-gate
+  requirements: [
+    bit/8
+  ]
+}
