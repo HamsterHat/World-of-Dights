@@ -56,5 +56,10 @@ requirements: [
 ]
 
 category: crafting
-research: not-gate-0
-researchCostMultiplier: 0.5
+research: {
+  parent: core-asm
+  requirements: [
+    zero/64
+    one/64
+  ]
+}
