@@ -1,0 +1,29 @@
+type: flying
+flying: true
+speed: 3.2
+health: 16
+hitSize: 8
+armor: 0
+range: 32
+mineTier: 1
+mineSpeed: 8
+mineItems: [number-zero, number-one]
+buildSpeed: 0
+itemCapacity: 64
+rotateSpeed: 10
+outlineColor: 00ffffff
+hovering: true
+canDrown: false
+engineSize: 0
+accel: 0.07
+drag: 0.03
+useEngineElevation: false
+shadowElevation: 0.3
+lightColor: 00ffffff
+lightRadius: 80
+
+
+
+
+research: research-asm
+requiresUnlock: false
