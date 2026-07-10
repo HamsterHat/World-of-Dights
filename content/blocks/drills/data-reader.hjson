@@ -41,5 +41,11 @@ requirements: [
 ]
 
 category: production
-research: core-asm
-researchCostMultiplier: 0.5
+research: {
+  parent: core-asm
+  requirements: [
+    byte/2
+    one/4
+    zero/4
+  ]
+}
