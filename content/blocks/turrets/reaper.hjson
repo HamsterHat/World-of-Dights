@@ -38,4 +38,6 @@ requirements: [
 ]
 
 category: turret
-research: core-asm
+research: research-asm
+researchCostMultiplier: 0
+requiresUnlock: false
