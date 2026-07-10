@@ -6,7 +6,7 @@ speed: 7.5
 junctionReplacement: data-junction
 
 requirements: [
-  byte/1
+  byte/0
 ]
 // посмотри на этот аппетитный байт, так и хочется его съесть
 
