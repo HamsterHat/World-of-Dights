@@ -27,3 +27,4 @@ lightRadius: 80
 
 research: research-asm
 requiresUnlock: false
+researchCostMultiplier: 0
