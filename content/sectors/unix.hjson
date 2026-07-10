@@ -1,0 +1,14 @@
+  type: SectorPreset
+  planet: cyberia
+  name: "unix"
+  sector: 0
+  difficulty: 1
+  captureWave: 21
+  alwaysUnlocked: true
+  addStartingItems: false
+  overrideLaunchDefaults: true
+  noLighting: true
+  research: {
+    parent: core-asm
+  }
+}
