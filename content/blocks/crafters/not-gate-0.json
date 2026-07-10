@@ -26,11 +26,7 @@
     {"item": "one", "amount": 32}
   ],
   "category": "crafting",
-  "research": {
-    "parent": "core-asm",
-    "requirements": [
-      {"item": "zero", "amount": 16},
-      {"item": "one", "amount": 16}
-    ]
-  }
+  "research": research-asm,
+  "researchCostMultiplier": 0,
+  "requiresUnlock": false
 }
