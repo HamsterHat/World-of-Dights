@@ -9,4 +9,9 @@ requirements: [
 ]
 
 category: distribution
-research: data-bus
+research: {
+  parent: data-bus
+  requirements: [
+    byte/2
+  ]
+}
