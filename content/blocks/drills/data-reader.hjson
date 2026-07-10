@@ -35,7 +35,6 @@ drillEffect: {
 
 requirements: [
   byte/2
-  bit/16
   one/8
   zero/8
 ]
