@@ -2,11 +2,8 @@
   "type": "UnitFactory",
   "size": 1,
   "health": 256,
-  "itemCapacity": 50,
-  "hasPower": true,
-  "consumes": {
-    "power": 2.5
-  },
+  "itemCapacity": 80,
+  "hasPower": false,
   "plans": [
     {
       "unit": "mov",
