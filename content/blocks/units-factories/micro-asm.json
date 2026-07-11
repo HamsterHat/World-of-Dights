@@ -19,11 +19,7 @@
     {"item": "bit", "amount": 32}
   ],
   "category": "units",
-  "research": {
-    "parent": "research-asm",
-    "requirements": [
-      {"item": "byte", "amount": 80},
-      {"item": "bit", "amount": 128}
-    ]
-  }
+  "research": "research-asm",
+  "researchCostMultiplier": 0,
+  "requiresUnlock": false
 }
