@@ -1,0 +1,32 @@
+{
+  "type": "UnitFactory",
+  "size": 1,
+  "health": 256,
+  "itemCapacity": 50,
+  "hasPower": true,
+  "consumes": {
+    "power": 2.5
+  },
+  "plans": [
+    {
+      "unit": "mov",
+      "time": 600,
+      "requirements": [
+        {"item": "bit", "amount": 8},
+        {"item": "byte", "amount": 2}
+      ]
+    }
+  ],
+  "requirements": [
+    {"item": "byte", "amount": 8},
+    {"item": "bit", "amount": 32}
+  ],
+  "category": "units",
+  "research": {
+    "parent": "research-asm",
+    "requirements": [
+      {"item": "byte", "amount": 80},
+      {"item": "bit", "amount": 128}
+    ]
+  }
+}
