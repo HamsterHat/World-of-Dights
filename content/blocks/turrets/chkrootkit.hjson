@@ -12,7 +12,7 @@ ammoTypes: {
     damage: 1
     collidesGround: true
     collidesAir: true
-    status: chkrootkit-damage
+    status: chkrootkitDamage
     statusDuration: 1
     knockback: 3
     colors: ["4cc9f0", "4361ee", "ffffff"]
