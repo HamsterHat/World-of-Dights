@@ -18,7 +18,7 @@ ammoTypes: {
     colors: ["4cc9f0", "4361ee", "ffffff"]
     length: 320
     width: 1
-    lifetime: 1
+    lifetime: 2
     hitEffect: {
       type: MultiEffect
       effects: [
@@ -44,7 +44,7 @@ ammoTypes: {
         }
       ]
     }
-    fadeTime: 6
+    fadeTime: 0
     lightStroke: 6
     strokeFrom: 1
     strokeTo: 1
