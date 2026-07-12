@@ -12,7 +12,8 @@ ammoTypes: {
     // остальные типы пуль-лазеров статусы не накладывают
     // я тебе не верю
     // читай src минды
-    // все лазеры это CollideLaser, а этот через ?
+    // все лазеры это CollideLaser, а этот через CollideLine.
+    // ну короче почему то это только так работает
     damage: 1
     collidesGround: true
     collidesAir: true
