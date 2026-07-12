@@ -9,8 +9,10 @@ targetGround: true
 ammoTypes: {
   byte: {
     type: LaserBulletType
-    damage: 0
-    status: chkrootkitDamage
+    damage: 1
+    collidesGround: true
+    collidesAir: true
+    status: chkrootkit-damage
     statusDuration: 1
     knockback: 3
     hitEffect: {
