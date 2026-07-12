@@ -34,7 +34,10 @@ ammoTypes: {
 }
 
 requirements: [
-  byte/4
+  mov-item/1
+  xor-item/1
+  jump-item/1
+  cmp-item/1
 ]
 
 category: turret
