@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 1
+health: 64
+hasItems: true
+itemCapacity: 8
+
+
+craftTime: 30
+
+
+consumes: {
+  items: [
+    byte/1
+  ]
+}
+
+
+
+
+outputItem: xor-item/1
+
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 4
+  length: 12
+  lifetime: 24
+  colorFrom: 00ffffff
+  colorTo: 001111ff
+  sizeFrom: 1.5
+  sizeTo: 0
+}
+
+
+requirements: [
+  byte/1
+]
+
+category: crafting
+research: research-asm
+researchCostMultiplier: 0
