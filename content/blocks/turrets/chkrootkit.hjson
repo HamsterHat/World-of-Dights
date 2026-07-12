@@ -11,6 +11,8 @@ ammoTypes: {
     type: ContinuousLaserBulletType
     // остальные типы пуль-лазеров статусы не накладывают
     // я тебе не верю
+    // читай src минды
+    // все лазеры это CollideLaser, а этот через ?
     damage: 1
     collidesGround: true
     collidesAir: true
