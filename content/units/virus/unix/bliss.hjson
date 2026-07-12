@@ -34,7 +34,7 @@ weapons: [
     }
     rotate: true
     rotateSpeed: 1.4
-    reload: 60
+    reload: 90
     mirror: true
     bullet: {
       type: EmpBulletType
@@ -45,11 +45,11 @@ weapons: [
       suppressColor: bf40bf
         frontColor: "702963"
         backColor: bf40bf
-        width: 4
-        height: 4
-      damage: 32
+        width: 6
+        height: 6
+      damage: 16
       despawnHit: true
-      splashDamage: 128
+      splashDamage: 32
       splashDamageRadius: 16
       status: glitched
       statusDuration: 512
