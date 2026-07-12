@@ -15,6 +15,9 @@ ammoTypes: {
     status: chkrootkit-damage
     statusDuration: 1
     knockback: 3
+    colors: ["4cc9f0", "4361ee", "ffffff"]
+    length: 320
+    width: 1
     hitEffect: {
       type: MultiEffect
       effects: [
@@ -40,9 +43,15 @@ ammoTypes: {
         }
       ]
     }
-    colors: ["4cc9f0", "4361ee", "ffffff"]
-    length: 320
-    width: 25
+    fadeTime: 6
+    lightStroke: 6
+    strokeFrom: 1
+    strokeTo: 1
+    pointyScaling: 1
+    backLength: 2
+    frontLength: 16	
+    oscScl: 1
+    oscMag: 1
   }
 }
 
