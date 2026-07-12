@@ -10,6 +10,7 @@ ammoTypes: {
   byte: {
     type: ContinuousLaserBulletType
     // остальные типы пуль-лазеров статусы не накладывают
+    // я тебе не верю
     damage: 1
     collidesGround: true
     collidesAir: true
@@ -60,7 +61,7 @@ ammoTypes: {
 requirements: [
   mov-item/9
   xor-item/4
-  jump-item/2
+  jmp-item/2
   cmp-item/6
 ]
 
