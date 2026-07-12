@@ -15,28 +15,9 @@ consumes: {
     one/1
   ]
 }
-
-drawer: {
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawGlowRegion
-      suffix: -glow
-      color: 00ffffff
-      alpha: 1.0
-      glowIntensity: 1.2
-    }
-  ]
-}
-// НЕ ТРОГАТЬ
-
-
 outputItem: bit/1
 // посмотри на этот апетитный бит
-// так и хочется его скушкать
+// так и хочется его скушать
 
 craftEffect: {
   type: ParticleEffect
