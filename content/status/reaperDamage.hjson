@@ -1,5 +1,6 @@
 damage: 32.0 // больше чем у юнита ядра
 speedMultiplier: -1
+healthMultiplier: 0.25 // уязвим на 1 тик
 
 
 effect: {
