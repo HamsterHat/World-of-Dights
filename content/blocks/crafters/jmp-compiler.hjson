@@ -17,7 +17,7 @@ consumes: {
 
 
 
-outputItem: jump-item/1
+outputItem: jmp-item/1
 
 
 craftEffect: {
