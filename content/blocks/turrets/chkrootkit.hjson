@@ -9,6 +9,7 @@ targetGround: true
 ammoTypes: {
   byte: {
     type: ContinuousLaserBulletType
+    // остальные типы пуль-лазеров статусы не накладывают
     damage: 1
     collidesGround: true
     collidesAir: true
