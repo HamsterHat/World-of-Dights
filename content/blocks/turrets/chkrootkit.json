@@ -1,0 +1,55 @@
+{
+  "type": "ItemTurret",
+  "size": 2,
+  "health": 512,
+  "range": 320,
+  "reload": 256,
+  "targetAir": true,
+  "targetGround": true,
+  "ammoTypes": {
+    "byte": {
+      "type": "LaserBulletType",
+      "damage": 20,
+      "length": 320,
+      "width": 8,
+      "colors": ["4cc9f0", "4361ee", "ffffff"],
+      "status": "chkrootkitDamage",
+      "statusDuration": 30,
+      "collidesGround": true,
+      "collidesAir": true,
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "length": 16,
+            "lifetime": 20,
+            "sizeFrom": 2.5,
+            "sizeTo": 0,
+            "colorFrom": "4cc9f0",
+            "colorTo": "4361ee"
+          },
+          {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 16,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "colorFrom": "ffffff",
+            "colorTo": "4cc9f0"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    {"item": "mov-item", "amount": 9},
+    {"item": "xor-item", "amount": 4},
+    {"item": "jmp-item", "amount": 2},
+    {"item": "cmp-item", "amount": 6}
+  ],
+  "category": "turret",
+  "research": "research-asm"
+}
