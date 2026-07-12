@@ -51,8 +51,8 @@ ammoTypes: {
     pointyScaling: 1
     backLength: 2
     frontLength: 16	
-    oscScl: 1
-    oscMag: 1
+    oscScl: 0
+    oscMag: 0
   }
 }
 
