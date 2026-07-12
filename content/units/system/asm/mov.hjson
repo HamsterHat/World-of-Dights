@@ -8,10 +8,10 @@ range: 32
 mineTier: 1
 mineSpeed: 4
 mineItems: [number-zero, number-one]
-buildSpeed: 0
+buildSpeed: -1
 itemCapacity: 8
 rotateSpeed: 10
-outlineColor: 00ffffff
+outlineColor: 00ffff00
 hovering: true
 canDrown: false
 engineSize: 0
