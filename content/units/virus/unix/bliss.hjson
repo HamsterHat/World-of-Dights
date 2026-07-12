@@ -1,0 +1,79 @@
+type: legs
+speed: 1.4
+health: 512
+
+type: legs
+legCount: 6
+legGroupSize: 3
+legPairOffset: 0.4
+legContinuousMove: true
+legLength: 32.0
+legLengthScl: 0.95
+legMaxLength: 2.0
+legMinLength: 0.4
+legSpeed: 0.15
+legForwardScl: 1.2
+legBaseOffset: 6.0
+legMoveSpace: 1.1
+legSplashDamage: 40.0
+legSplashRange: 12.0
+flipLegSide: true
+legBaseUnder: true
+lockLegBase: false
+range: 90
+
+weapons: [
+  {
+    name: bliss-shotgun
+    x: 5
+    y: 0
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 5
+    }
+    rotate: true
+    rotateSpeed: 1.4
+    reload: 60
+    mirror: true
+    bullet: {
+      type: EmpBulletType
+      scaleLife: true
+      suppressionRange: 32
+      suppressionDuration: 120
+      suppressionEffectChance: 90
+      suppressColor: bf40bf
+        frontColor: "702963"
+        backColor: bf40bf
+        width: 4
+        height: 4
+      damage: 32
+      despawnHit: true
+      splashDamage: 128
+      splashDamageRadius: 16
+      status: glitched
+      statusDuration: 512
+        lifetime: 30
+        speed: 3
+        radius: 32
+      timeIncrease: 1
+      timeDuration: 600
+      powerDamageScl: 2
+      powerSclDecrease: 0
+      unitDamageScl: 2
+        hitEffect: {
+          type: ParticleEffect
+          particles: 12
+          length: 32
+          lifetime: 25
+          colorFrom: ff0033ff
+          colorTo: 00ffff00
+          sizeFrom: 3.0
+          sizeTo: 0.0
+        }
+    }
+  }
+]
+
+immunities: [glitched, reaperDamage]
+
