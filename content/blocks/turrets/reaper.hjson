@@ -36,7 +36,7 @@ ammoTypes: {
 requirements: [
   mov-item/1
   xor-item/1
-  jump-item/1
+  jmp-item/1
   cmp-item/1
 ]
 
