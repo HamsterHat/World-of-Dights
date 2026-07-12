@@ -1,8 +1,8 @@
 type: legs
 speed: 1.4
 health: 512
+armor: 16
 
-type: legs
 legCount: 6
 legGroupSize: 3
 legPairOffset: 0.4
