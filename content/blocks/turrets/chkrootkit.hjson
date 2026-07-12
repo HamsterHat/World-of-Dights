@@ -18,6 +18,7 @@ ammoTypes: {
     colors: ["4cc9f0", "4361ee", "ffffff"]
     length: 320
     width: 1
+    lifetime: 1
     hitEffect: {
       type: MultiEffect
       effects: [
