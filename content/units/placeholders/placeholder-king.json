@@ -62,7 +62,7 @@
           "trailColor": "ffffff",
           "trailLength": 8,
           "trailWidth": 2,
-          "followAimSpeed": 0.5,
+          "followAimSpeed": 1.0,
           "homingPower": 0.3,
           "homingRange": 160,
           "homingDelay": 5,
