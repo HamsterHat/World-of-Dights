@@ -10,7 +10,7 @@
       "time": 600,
       "requirements": [
         {"item": "mov-item", "amount": 1},
-        {"item": "jump-item", "amount": 1},
+        {"item": "jmp-item", "amount": 1},
         {"item": "cmp-item", "amount": 1}
       ]
     }
