@@ -9,12 +9,12 @@
   "ammoTypes": {
     "byte": {
       "type": "LaserBulletType",
-      "damage": 20,
+      "damage": 1,
       "length": 320,
       "width": 8,
       "colors": ["4cc9f0", "4361ee", "ffffff"],
       "status": "chkrootkitDamage",
-      "statusDuration": 30,
+      "statusDuration": 1,
       "collidesGround": true,
       "collidesAir": true,
       "hitEffect": {
