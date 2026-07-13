@@ -3,7 +3,7 @@
   "size": 2,
   "health": 512,
   "range": 320,
-  "reload": 256,
+  "reload": 128,
   "targetAir": true,
   "targetGround": true,
   "ammoTypes": {
