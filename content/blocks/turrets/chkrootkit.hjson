@@ -19,6 +19,7 @@ ammoTypes: {
     length: 320
     width: 1
     lifetime: 2
+ incend: false
 
 
     shootEffect: {
