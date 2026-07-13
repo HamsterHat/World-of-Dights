@@ -51,5 +51,6 @@
     {"item": "cmp-item", "amount": 6}
   ],
   "category": "turret",
-  "research": "research-asm"
+  "research": "research-asm",
+  "researchCostMultiplier": 0
 }
