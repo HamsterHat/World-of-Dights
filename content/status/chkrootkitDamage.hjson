@@ -1,4 +1,4 @@
-damage: 64.0
+damage: 128.0
 speedMultiplier: -1
 healthMultiplier: 0.8 // уязвим на 1 тик
 
