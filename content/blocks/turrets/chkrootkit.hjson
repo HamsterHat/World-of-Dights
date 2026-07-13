@@ -21,7 +21,6 @@ ammoTypes: {
     lifetime: 2
 
 
-
     shootEffect: {
   type: MultiEffect
   effects: [
