@@ -19,7 +19,9 @@ ammoTypes: {
     length: 320
     width: 1
     lifetime: 2
-       shootEffect: {
+
+
+    shootEffect: {
       type: MultiEffect
       effects: [
         {
@@ -34,6 +36,9 @@ ammoTypes: {
           lifetime: 18
           colorFrom: 4361ee
           colorTo: 4361ee00
+          useRotation: true
+          rotWithParent: true
+          clipSize: 800
         }
         {
           type: ParticleEffect
@@ -47,6 +52,9 @@ ammoTypes: {
           lifetime: 14
           colorFrom: 4cc9f0
           colorTo: 4361ee
+          useRotation: true
+          rotWithParent: true
+          clipSize: 800
         }
         {
           type: ParticleEffect
@@ -60,6 +68,9 @@ ammoTypes: {
           lifetime: 10
           colorFrom: ffffff
           colorTo: 4cc9f0
+          useRotation: true
+          rotWithParent: true
+          clipSize: 800
         }
         {
           type: ParticleEffect
@@ -73,12 +84,18 @@ ammoTypes: {
           lifetime: 6
           colorFrom: ffffff
           colorTo: ffffff
+          useRotation: true
+          rotWithParent: true
+          clipSize: 800
         }
       ]
     }
 
-    hitEffect: {
-      type: MultiEffect
+
+
+
+        hitEffect: {
+         type: MultiEffect
       effects: [
         {
           type: ParticleEffect
