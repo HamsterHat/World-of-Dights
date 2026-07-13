@@ -22,7 +22,6 @@ ammoTypes: {
 
 
 
-
     shootEffect: {
   type: MultiEffect
   effects: [
