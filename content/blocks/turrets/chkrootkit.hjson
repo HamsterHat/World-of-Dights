@@ -43,7 +43,7 @@ ammoTypes: {
       lifetime: 18
       colorFrom: 4361ee
       colorTo: 4361ee00
-      clipSize: 800
+      clip: 800
     }
     {
       type: ParticleEffect
@@ -63,7 +63,7 @@ ammoTypes: {
       lifetime: 14
       colorFrom: 4cc9f0
       colorTo: 4361ee
-      clipSize: 800
+      clip: 800
     }
     {
       type: ParticleEffect
@@ -83,7 +83,7 @@ ammoTypes: {
       lifetime: 10
       colorFrom: ffffff
       colorTo: 4cc9f0
-      clipSize: 800
+      clip: 800
     }
     {
       type: ParticleEffect
@@ -103,7 +103,7 @@ ammoTypes: {
       lifetime: 6
       colorFrom: ffffff
       colorTo: ffffff
-      clipSize: 800
+      clip: 800
     }
   ]
 }
