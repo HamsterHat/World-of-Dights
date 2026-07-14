@@ -1,3 +1,5 @@
+// интересный факт:
+// [W] [chkrootkit.hjson]: Unknown field 'incend' for class 'ContinuousLaserBulletType'
 type: ItemTurret
 size: 2
 health: 512
