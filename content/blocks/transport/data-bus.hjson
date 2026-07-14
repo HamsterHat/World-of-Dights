@@ -6,7 +6,7 @@ speed: 7.5
 junctionReplacement: data-junction
 
 requirements: [
-  byte/1
+  bit/1
 ]
 // посмотри на этот аппетитный байт, так и хочется его съесть
 
@@ -15,6 +15,8 @@ category: distribution
 research: {
   parent: core-asm
   requirements: [
-    byte/2
+    bit/2
+    zero/2
+    one/2
   ]
 }
