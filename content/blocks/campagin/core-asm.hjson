@@ -20,6 +20,6 @@ research: {
   root: true
   planet: cyberia
   name: Cyberia
-  icon: error
+  icon: one
 }
 
