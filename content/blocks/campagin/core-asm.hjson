@@ -19,6 +19,7 @@ requirements: [
 research: {
   root: true
   planet: cyberia
-  name: core-asm
+  name: Cyberia
+  icon: error
 }
 
