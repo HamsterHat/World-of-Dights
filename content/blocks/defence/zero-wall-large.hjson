@@ -3,13 +3,13 @@ size: 2
 health: 1024
 
 requirements: [
-  byte/4
+  zero/32
 ]
 
 category: defense
 research: {
   parent: zero-wall
   requirements: [
-    byte/2
+    zero/16
   ]
 }
