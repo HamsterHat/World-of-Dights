@@ -3,13 +3,13 @@ size: 1
 health: 256
 
 requirements: [
-  byte/1
+  zero/8
 ]
 
 category: defense
 research: {
   parent: core-asm
   requirements: [
-    byte/2
+    zero/16
   ]
 }
