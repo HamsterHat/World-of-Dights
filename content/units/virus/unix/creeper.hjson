@@ -2,8 +2,6 @@ type: crawl
 speed: 1.4
 health: 64
 controller: SuicideAI
-crawlSlowdown: 0.0
-crawlSlowdownFrac: 0.01
 crushDamage: 1
 
 weapons: [
