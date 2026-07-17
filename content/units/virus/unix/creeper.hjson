@@ -39,3 +39,11 @@ weapons: [
 
 immunities: [ glitched ]
 
+abilities: [
+{
+type: UnitSpawnAbility
+unit: creeper
+spawnTime: 600
+}
+]
+
