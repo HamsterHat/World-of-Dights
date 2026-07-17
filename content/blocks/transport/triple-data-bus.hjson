@@ -1,5 +1,6 @@
 type: Duct
 size: 1
+armored: true
 health: 24
 speed: 2.5
 // формула скорости: 60÷x. при 2.5 это 24, а это 8×3
