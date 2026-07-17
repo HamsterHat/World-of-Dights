@@ -21,8 +21,9 @@ ammoTypes: {
     length: 320
     width: 1
     lifetime: 2
-incendChance: 0
-makeFire: false
+    incendChance: 0
+    makeFire: false
+    damageInterval: 1
 
  
     shootEffect: {
