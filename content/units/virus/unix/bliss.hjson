@@ -21,7 +21,6 @@ flipLegSide: true
 legBaseUnder: true
 lockLegBase: false
 range: 90
-
 weapons: [
   {
     name: bliss-shotgun
