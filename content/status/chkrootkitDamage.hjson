@@ -1,6 +1,7 @@
-damage: 128.0
+damage: 0
 speedMultiplier: -1
-healthMultiplier: 0.8 // уязвим на 1 тик
+healthMultiplier: 0.8
+disarm: true
 
 
 effect: {
