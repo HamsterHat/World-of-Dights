@@ -1,0 +1,70 @@
+type: PowerTurret
+size: 2
+health: 64
+range: 128
+shootSound: bang
+shootEffect: shootBig
+rotateSpeed: 0
+reload: 170
+recoil: 0
+shootCone: 360
+shootY: 0
+linearWarmup: true
+alwaysShooting: true
+minWarmup: 1
+shootWarmupSpeed: 0.0016666666
+cooldownTime: 160
+
+
+rotate: false
+quickRotate: false
+
+shoot: {
+	type: ShootSpread
+	shots: 1
+}
+
+shootType: {
+	type: BulletType
+	lifetime: 0
+	absorbable: false
+	hittable: false
+	despawnEffect: none
+	collides: false
+	killShooter: true
+}
+
+destroyBullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    splashDamage: 99999999999999999999999999999999999
+    splashDamageRadius: 128
+    instantDisappear: true
+    hitEffect: none
+    despawnEffect: none
+    hittable: false
+    absorbable: false
+    collides: false
+    status: remove
+}
+
+destroyEffect: none
+// TODO EFFECT
+
+
+
+requirements: [
+		xor-item/4
+    mov-item/6
+    jmp-item/4
+]
+
+
+
+category: effect
+
+research: {
+	parent: research-asm
+	requirements: []
+}
