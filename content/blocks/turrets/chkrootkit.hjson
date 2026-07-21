@@ -4,7 +4,7 @@ type: ItemTurret
 size: 2
 health: 512
 range: 320
-reload: 256
+reload: 512
 targetAir: true
 targetGround: true
 
@@ -15,7 +15,7 @@ ammoTypes: {
     collidesGround: true
     collidesAir: true
     status: chkrootkitDamage
-    statusDuration: 1
+    statusDuration: 64
     knockback: 3
     colors: ["4cc9f0", "4361ee", "ffffff"]
     length: 320
