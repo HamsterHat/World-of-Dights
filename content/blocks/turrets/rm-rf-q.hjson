@@ -55,7 +55,7 @@ destroyEffect: none
 
 
 requirements: [
-		xor-item/4
+	xor-item/4
     mov-item/6
     jmp-item/4
 ]
