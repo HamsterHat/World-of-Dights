@@ -49,9 +49,166 @@ destroyBullet: {
     status: remove
 }
 
-destroyEffect: none
-// TODO EFFECT
+destroyEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      lifetime: 20
+      sizeTo: 128
+      colorFrom: 00ffff
+      colorTo: 002222
+      layer: 20
+    }
+    {
+      type: ParticleEffect
+      particles: 30
+      lifetime: 40
+      length: 128
+      square: true
+      colorFrom: ffffff
+      colorTo: 00ffff
+      layer: 40
+    }
+    {
+      type: WaveEffect
+      lifetime: 50
+      sizeTo: 90
+      strokeFrom: 6
+      strokeTo: 0
+      colorFrom: 00ffff
+      colorTo: 004444
+      layer: 60
+    }
+    {
+      type: ParticleEffect
+      line: true
+      particles: 25
+      lifetime: 35
+      length: 140
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: 00ffff
+      layer: 80
+    }
+    {
+      type: WaveEffect
+      lifetime: 70
+      sizeTo: 110
+      colorFrom: 008888
+      colorTo: 001111
+      layer: 100
+    }
+    {
+      type: ParticleEffect
+      particles: 20
+      lifetime: 60
+      length: 80
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: 00ffff
+      colorTo: 000000
+      layer: 110
+    }
+    {
+      type: WaveEffect
+      lifetime: 15
+      sizeTo: 140
+      strokeFrom: 10
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: 00ffff
+      layer: 115
+    }
+    {
+      type: ParticleEffect
+      particles: 15
+      lifetime: 80
+      length: 50
+      square: true
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 00ffff
+      colorTo: 002222
+      layer: 120
+    }
+  ]
+}
 
+
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -code-line1
+      mirror: true
+      progress: warmup
+      moveY: 6
+      moveX: 1
+      color: 00ffff
+      blending: additive
+    }
+    {
+      type: RegionPart
+      suffix: -code-line2
+      mirror: true
+      progress: warmup
+      moveY: 8
+      moveX: -1
+      color: 00ffff
+      blending: additive
+    }
+    {
+      type: RegionPart
+      suffix: -code-line3
+      mirror: true
+      progress: warmup
+      moveY: 4
+      moveRot: 15
+      color: 00ffff
+      blending: additive
+    }
+    {
+      type: RegionPart
+      suffix: -code-line4
+      mirror: true
+      progress: warmup
+      moveY: 10
+      color: 00ffff
+      blending: additive
+    }
+    {
+      type: RegionPart
+      suffix: -hatch-left
+      progress: warmup
+      moveX: -4
+      moveRot: -30
+    }
+    {
+      type: RegionPart
+      suffix: -hatch-right
+      progress: warmup
+      moveX: 4
+      moveRot: 30
+    }
+    {
+      type: RegionPart
+      suffix: -armor-front
+      progress: warmup
+      moveY: 3
+    }
+    {
+      type: RegionPart
+      suffix: -glow-core
+      progress: warmup
+      color: 00ffff
+      blending: additive
+    }
+  ]
+}
 
 
 requirements: [
