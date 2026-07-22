@@ -134,7 +134,7 @@ drawer: {
       type: RegionPart
       suffix: "-inner-hatch-left"
       moveX: -5
-	  x: -8
+	  x: -2
 	  y: 0
       progress: {
         type: warmup
@@ -152,7 +152,7 @@ drawer: {
       type: RegionPart
       suffix: "-inner-hatch-right"
       moveX: 5
-	  x: 8
+	  x: 2
 	  y: 0
       progress: {
         type: warmup
