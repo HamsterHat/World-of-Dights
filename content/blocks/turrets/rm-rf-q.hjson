@@ -136,84 +136,95 @@ destroyEffect: {
   ]
 }
 
-
 drawer: {
-	type: DrawTurret
-	parts: [
-                {
-                        type: RegionPart
-                        suffix: "-hatch-top"
-                        mirror: true
-                        moveX: 4
-                        moveY: 4
-                        progress: {
-                                type: warmup
-                                ops: [
-									{ op: compress, start: 0.0, end: 0.3 },
-									{ op: curve, interp: circleIn }
-								]
-                        }
-                }
-                {
-                        type: RegionPart
-                        suffix: "-hatch-bottom"
-                        mirror: true
-                        moveX: 4
-                        moveY: -4
-                        progress: {
-                                type: warmup
-                                ops: [{ op: compress, start: 0.0, end: 0.3 }, { op: curve, interp: circleIn }]
-                        }
-                }
-
-                {
-                        type: RegionPart
-                        suffix: "-inner-hatch"
-                        mirror: true
-                        moveX: 5
-                        progress: {
-                                type: warmup
-                                ops: [{ op: compress, start: 0.3, end: 0.6 }, { op: curve, interp: circleIn }]
-                        }
-                }
-                {
-                        type: RegionPart
-                        suffix: "-hatch-flash"
-                        mirror: true
-                        blending: additive
-                        color: 00ffff
-                        progress: {
-                                type: warmup
-                                ops: [{ op: compress, start: 0.3, end: 0.45 }, { op: curve, interp: sineIn }]
-                        }
-                }
-
-                {
-                        type: RegionPart
-                        suffix: "-glow-core"
-                        blending: additive
-                        color: 00ffff
-                        growX: 1.5
-                        growY: 1.5
-                        progress: {
-                                type: warmup
-                                ops: [{ op: compress, start: 0.6, end: 0.85 }, { op: curve, interp: circleIn }]
-                        }
-                }
-
-                {
-                        type: RegionPart
-                        suffix: "-flash-region"
-                        blending: additive
-                        color: ffffff
-                        growX: 3.5
-                        growY: 3.5
-                        progress: {
-                                type: warmup
-                                ops: [{ op: compress, start: 0.85, end: 1.0 }, { op: curve, interp: circleIn }]
-                        }
-                }
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-hatch-top"
+      mirror: true
+      moveX: 4
+      moveY: 4
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.0, end: 0.3 }
+          { op: curve, interp: circleIn }
         ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-hatch-bottom"
+      mirror: true
+      moveX: 4
+      moveY: -4
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.0, end: 0.3 }
+          { op: curve, interp: circleIn }
+        ]
+      }
+    }
+	{
+      type: RegionPart
+      suffix: "-inner-hatch"
+      mirror: true
+      moveX: 5
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.3, end: 0.6 }
+          { op: curve, interp: circleIn }
+        ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-hatch-flash"
+      mirror: true
+      blending: additive
+      color: 00ffff
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.3, end: 0.45 }
+          { op: curve, interp: sineIn }
+        ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-glow-core"
+      blending: additive
+      color: 00ffff
+      growX: 1.5
+      growY: 1.5
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.6, end: 0.85 }
+          { op: curve, interp: circleIn }
+        ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-flash-region"
+      blending: additive
+      color: ffffff
+      growX: 3.5
+      growY: 3.5
+      progress: {
+        type: warmup
+        ops: [
+          { op: compress, start: 0.85, end: 1.0 }
+          { op: curve, interp: circleIn }
+        ]
+      }
+    }
+  ]
 }
 
 
