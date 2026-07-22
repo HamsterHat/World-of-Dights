@@ -114,7 +114,6 @@ drawer: {
 	{
       type: RegionPart
       suffix: "-glow-core"
-      blending: additive
       color: 00ffff
       growX: 1.5
       growY: 1.5
@@ -136,9 +135,27 @@ drawer: {
     }
 	{
       type: RegionPart
-      suffix: "-inner-hatch"
-      mirror: true
+      suffix: "-inner-hatch-left"
       moveX: 5
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.3
+				end: 0.6
+			}
+          	{
+				op: curve
+				interp: circleIn
+			}
+        ]
+      }
+    }
+{
+      type: RegionPart
+      suffix: "-inner-hatch-right"
+      moveX: -5
       progress: {
         type: warmup
         ops: [
@@ -156,7 +173,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-hatch-top"
+      suffix: "-hatch-top-left"
       mirror: true
       moveX: 4
       moveY: 4
@@ -175,11 +192,53 @@ drawer: {
         ]
       }
     }
+	{
+      type: RegionPart
+      suffix: "-hatch-top-right"
+      mirror: true
+      moveX: -4
+      moveY: 4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+			}
+          	{
+				op: curve
+				interp: circleIn
+			}
+        ]
+      }
+    }
     {
       type: RegionPart
-      suffix: "-hatch-bottom"
+      suffix: "-hatch-bottom-left"
       mirror: true
       moveX: 4
+      moveY: -4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+			}
+          	{
+				op: curve
+				interp: circleIn
+			}
+        ]
+      }
+    }
+	{
+      type: RegionPart
+      suffix: "-hatch-bottom-right"
+      mirror: true
+      moveX: -4
       moveY: -4
       progress: {
         type: warmup
