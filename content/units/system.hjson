@@ -39,7 +39,7 @@ weapons: [
     
     bullet: {
       type: LaserBulletType
-      damage: 16
+      damage: 8
       length: 64
       width: 4
       colors: [
