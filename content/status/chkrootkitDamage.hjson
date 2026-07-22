@@ -1,7 +1,7 @@
 damage: 0
-speedMultiplier: -1
+speedMultiplier: 0.4
 healthMultiplier: 0.8
-disarm: true
+damageMultiplier: 0.2
 
 
 effect: {
