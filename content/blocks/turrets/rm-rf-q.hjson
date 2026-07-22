@@ -125,9 +125,6 @@ drawer: {
 				op: compress
 				start: 0.6
 				end: 0.85
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -146,9 +143,6 @@ drawer: {
 				op: compress
 				start: 0.3
 				end: 0.6
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -167,9 +161,6 @@ drawer: {
 				op: compress
 				start: 0.3
 				end: 0.6
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -180,8 +171,8 @@ drawer: {
       suffix: "-hatch-top-left"
       moveX: 4
       moveY: 4
-	  x: 16
-      y: 16
+	  x: 4
+      y: 4
       progress: {
         type: warmup
         ops: [
@@ -189,9 +180,6 @@ drawer: {
 				op: compress
 				start: 0.0
 				end: 0.3
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -202,8 +190,8 @@ drawer: {
       suffix: "-hatch-top-right"
       moveX: -4
       moveY: 4
-	  x: -16
-      y: 16
+	  x: -4
+      y: 4
       progress: {
         type: warmup
         ops: [
@@ -211,9 +199,6 @@ drawer: {
 				op: compress
 				start: 0.0
 				end: 0.3
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -223,9 +208,9 @@ drawer: {
       type: RegionPart
       suffix: "-hatch-bottom-left"
       moveX: 4
-      moveY: -4
-	  x: 16
-	  y: -16
+      moveY: 4
+	  x: 4
+	  y: 4
       progress: {
         type: warmup
         ops: [
@@ -233,9 +218,6 @@ drawer: {
 				op: compress
 				start: 0.0
 				end: 0.3
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
@@ -245,9 +227,9 @@ drawer: {
       type: RegionPart
       suffix: "-hatch-bottom-right"
       moveX: -4
-      moveY: -4
-	  x: -16
-	  y: 16
+      moveY: 4
+	  x: -4
+	  y: -4
       progress: {
         type: warmup
         ops: [
@@ -255,9 +237,6 @@ drawer: {
 				op: compress
 				start: 0.0
 				end: 0.3
-			}
-          	{
-				op: curve
 				interp: circleIn
 			}
         ]
