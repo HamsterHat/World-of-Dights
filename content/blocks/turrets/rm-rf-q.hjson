@@ -2,7 +2,8 @@ type: PowerTurret
 size: 2
 health: 64
 range: 128
-shootSound: bang
+shootSound: rm-shoot
+chargeSound: rm-charge
 shootEffect: shootBig
 rotateSpeed: 0
 reload: 170
