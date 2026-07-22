@@ -26,6 +26,10 @@ shoot: {
 	shots: 1
 }
 
+
+
+
+
 shootType: {
 	type: BulletType
 	lifetime: 0
@@ -37,6 +41,7 @@ shootType: {
 	status: remove
 	splashDamage: 9999999999999999999999999999999999
 	splashDamageRadius: 128
+	fragBullets: 46
 }
 
 destroyBullet: {
@@ -52,6 +57,44 @@ destroyBullet: {
     absorbable: false
     collides: false
 	status: glitched
+	fragBullet: {
+		type: RailBulletType
+		damage: 99
+		status: glitched
+		statusDuration: 999
+		pierce: false
+		hitEffect: {
+	      type: ParticleEffect
+	      particles: 64
+	      lifetime: 99
+	      length: 65
+	      colorFrom: 00ffff88
+	      colorTo: 00ff0088
+	      sizeFrom: 3
+		  sizeTo: 0
+	    }
+		pierceEffect: none
+		pointEffect: {
+	      type: ParticleEffect
+	      particles: 1
+	      lifetime: 8
+	      length: 0.01
+		  baseLength: 0.01
+	      colorFrom: 00ffff
+	      colorTo: 00ff00
+	      strokeFrom: 8
+		  strokeTo: 0
+		  line: true
+		  cone: 0
+		  lenFrom: 20
+		  lenTo: 20
+	    }
+		length: 100
+		pointEffectSpace: 20
+	    createChance: 0.1
+		knockback: 8
+		buildingDamageMultiplier: 2.75
+	}
 }
 
 destroyEffect: {
@@ -110,6 +153,92 @@ destroyEffect: {
       colorFrom: 002222
       colorTo: 00ffff
     }
+{
+            type: WaveEffect
+            lifetime: 14
+            layer: 101
+            sizeFrom: 4
+            sizeTo: 120
+            strokeFrom: 3
+            strokeTo: 8
+            colorFrom: f68021
+            colorTo: db661c00
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            layer: 101
+            interp: pow3
+            baseLength: 10
+            length: 55
+            particles: 22
+            sizeFrom: 8
+            sizeTo: 0
+            colorFrom: 6e7080
+            colorTo: 565666
+        }
+        {
+            type: ParticleEffect
+            lifetime: 85
+            layer: 101
+            interp: pow5Out
+            sizeInterp: pow5In
+            baseLength: 14
+            length: 85
+            particles: 25
+            sizeFrom: 6
+            sizeTo: 0
+            colorFrom: 7f7f7fff
+            colorTo: 3f3f3fff
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow5In
+            baseLength: 24
+            length: 95
+            particles: 14
+            sizeFrom: 1.2
+            sizeTo: 0
+            colorFrom: 7f7f7fff
+            colorTo: 3f3f3fff
+        }
+        {
+            type: ParticleEffect
+            lifetime: 55
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 95
+            line: true
+            particles: 35
+            strokeFrom: 1.25
+            strokeTo: 0
+            lenFrom: 7
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 75
+            line: true
+            particles: 24
+            strokeFrom: 2.5
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
   ]
 }
 
