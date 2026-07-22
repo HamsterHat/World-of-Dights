@@ -134,30 +134,6 @@ drawer: {
         ]
       }
     }
-
-	{
-      type: RegionPart
-      suffix: "-flash-region"
-      blending: additive
-      color: ffffff
-      growX: 3.5
-      growY: 3.5
-      outline: false
-      progress: {
-        type: warmup
-        ops: [
-         	{
-				op: compress
-				start: 0.85
-				end: 1.0
-			}
-          	{
-				op: curve
-				interp: circleIn
-			}
-        ]
-      }
-    }
 	{
       type: RegionPart
       suffix: "-inner-hatch"
@@ -178,29 +154,6 @@ drawer: {
         ]
       }
     }
-	{
-      type: RegionPart
-      suffix: "-hatch-flash"
-      mirror: true
-      blending: additive
-      color: 00ffff
-	  outline: false
-      progress: {
-        type: warmup
-        ops: [
-         	{
-				op: compress
-				start: 0.3
-				end: 0.45
-			}
-          	{
-				op: curve
-				interp: sineIn
-			}
-        ]
-      }
-    }
-    
     {
       type: RegionPart
       suffix: "-hatch-top"
