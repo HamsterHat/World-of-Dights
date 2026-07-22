@@ -35,7 +35,7 @@ weapons: [
   }
 ]
 
-immunities: [ glitched ]
+immunities: [ glitched, chkrootkitDamage]
 
 abilities: [
 {
