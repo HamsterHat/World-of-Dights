@@ -179,6 +179,7 @@ drawer: {
       mirror: true
       blending: additive
       color: 00ffff
+	  outline: false
       progress: {
         type: warmup
         ops: [
@@ -201,6 +202,7 @@ drawer: {
       color: 00ffff
       growX: 1.5
       growY: 1.5
+	  outline: false
       progress: {
         type: warmup
         ops: [
@@ -223,6 +225,7 @@ drawer: {
       color: ffffff
       growX: 3.5
       growY: 3.5
+      outline: false
       progress: {
         type: warmup
         ops: [
