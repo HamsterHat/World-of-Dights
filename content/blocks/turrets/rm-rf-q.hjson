@@ -148,7 +148,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.0, end: 0.3 }
+          { op: compress, start: 0.0, end: 0.3 },
           { op: curve, interp: circleIn }
         ]
       }
@@ -162,7 +162,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.0, end: 0.3 }
+          { op: compress, start: 0.0, end: 0.3 },
           { op: curve, interp: circleIn }
         ]
       }
@@ -175,7 +175,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.3, end: 0.6 }
+          { op: compress, start: 0.3, end: 0.6 },
           { op: curve, interp: circleIn }
         ]
       }
@@ -189,7 +189,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.3, end: 0.45 }
+          { op: compress, start: 0.3, end: 0.45 },
           { op: curve, interp: sineIn }
         ]
       }
@@ -204,7 +204,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.6, end: 0.85 }
+          { op: compress, start: 0.6, end: 0.85 },
           { op: curve, interp: circleIn }
         ]
       }
@@ -219,7 +219,7 @@ drawer: {
       progress: {
         type: warmup
         ops: [
-          { op: compress, start: 0.85, end: 1.0 }
+          { op: compress, start: 0.85, end: 1.0 },
           { op: curve, interp: circleIn }
         ]
       }
