@@ -171,7 +171,7 @@ drawer: {
       suffix: "-hatch-top-left"
       moveX: 4
       moveY: 4
-	  x: 4
+	  x: -4
       y: 4
       progress: {
         type: warmup
@@ -190,7 +190,7 @@ drawer: {
       suffix: "-hatch-top-right"
       moveX: -4
       moveY: 4
-	  x: -4
+	  x: 4
       y: 4
       progress: {
         type: warmup
