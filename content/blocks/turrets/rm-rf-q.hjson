@@ -226,9 +226,9 @@ drawer: {
 	{
       type: RegionPart
       suffix: "-hatch-bottom-right"
-      moveX: -4
+      moveX: 4
       moveY: -4
-	  x: -4
+	  x: 4
 	  y: -4
       progress: {
         type: warmup
