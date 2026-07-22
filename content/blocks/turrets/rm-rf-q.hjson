@@ -136,7 +136,9 @@ drawer: {
 	{
       type: RegionPart
       suffix: "-inner-hatch-left"
-      moveX: 5
+      moveX: -5
+	  x: -8
+	  y: 0
       progress: {
         type: warmup
         ops: [
@@ -155,7 +157,9 @@ drawer: {
 {
       type: RegionPart
       suffix: "-inner-hatch-right"
-      moveX: -5
+      moveX: 5
+	  x: 8
+	  y: 0
       progress: {
         type: warmup
         ops: [
@@ -174,9 +178,10 @@ drawer: {
     {
       type: RegionPart
       suffix: "-hatch-top-left"
-      mirror: true
       moveX: 4
       moveY: 4
+	  x: 16
+      y: 16
       progress: {
         type: warmup
         ops: [
@@ -195,9 +200,10 @@ drawer: {
 	{
       type: RegionPart
       suffix: "-hatch-top-right"
-      mirror: true
       moveX: -4
       moveY: 4
+	  x: -16
+      y: 16
       progress: {
         type: warmup
         ops: [
@@ -216,9 +222,10 @@ drawer: {
     {
       type: RegionPart
       suffix: "-hatch-bottom-left"
-      mirror: true
       moveX: 4
       moveY: -4
+	  x: 16
+	  y: -16
       progress: {
         type: warmup
         ops: [
@@ -237,9 +244,10 @@ drawer: {
 	{
       type: RegionPart
       suffix: "-hatch-bottom-right"
-      mirror: true
       moveX: -4
       moveY: -4
+	  x: -16
+	  y: 16
       progress: {
         type: warmup
         ops: [
