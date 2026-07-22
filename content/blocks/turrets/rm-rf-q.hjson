@@ -52,86 +52,58 @@ destroyBullet: {
 destroyEffect: {
   type: MultiEffect
   effects: [
-    {
-      type: WaveEffect
-      lifetime: 20
-      sizeTo: 128
-      colorFrom: 00ffff
-      colorTo: 002222
-      layer: 20
-    }
-    {
+	{
       type: ParticleEffect
-      particles: 30
-      lifetime: 40
-      length: 128
-      square: true
-      colorFrom: ffffff
-      colorTo: 00ffff
-      layer: 40
-    }
-    {
-      type: WaveEffect
-      lifetime: 50
-      sizeTo: 90
-      strokeFrom: 6
-      strokeTo: 0
-      colorFrom: 00ffff
-      colorTo: 004444
-      layer: 60
-    }
-    {
-      type: ParticleEffect
-      line: true
-      particles: 25
-      lifetime: 35
-      length: 140
-      strokeFrom: 4
-      strokeTo: 0
-      colorFrom: ffffff
-      colorTo: 00ffff
-      layer: 80
-    }
-    {
-      type: WaveEffect
-      lifetime: 70
-      sizeTo: 110
-      colorFrom: 008888
-      colorTo: 001111
-      layer: 100
-    }
-    {
-      type: ParticleEffect
-      particles: 20
-      lifetime: 60
-      length: 80
-      sizeFrom: 8
-      sizeTo: 0
-      colorFrom: 00ffff
-      colorTo: 000000
-      layer: 110
-    }
-    {
-      type: WaveEffect
+      particles: 1
       lifetime: 15
-      sizeTo: 140
-      strokeFrom: 10
-      strokeTo: 0
-      colorFrom: ffffff
+      length: 0
+      colorFrom: 00ffff
+      colorTo: 00ff00
+      sizeFrom: 128
+	  sizeTo: 128
+    }
+	{
+      type: ParticleEffect
+      particles: 1
+      lifetime: 15
+	  startDelay: 15
+      length: 0
+      colorFrom: 00ff00
+      colorTo: 0000ff
+      sizeFrom: 128
+	  sizeTo: 128
+    }
+	{
+      type: ParticleEffect
+      particles: 1
+      lifetime: 15
+	  startDelay: 30
+      length: 0
+      colorFrom: 0000ff
       colorTo: 00ffff
-      layer: 115
+      sizeFrom: 128
+	  sizeTo: 0
     }
     {
-      type: ParticleEffect
-      particles: 15
-      lifetime: 80
-      length: 50
-      square: true
-      sizeFrom: 4
-      sizeTo: 0
+      type: WaveEffect
+      lifetime: 90
+      sizeTo: 128
+	  sizeFrom: 128
+	  strokeFrom: 8
+	  strokeTo: 8
       colorFrom: 00ffff
       colorTo: 002222
-      layer: 120
+    }
+	{
+      type: WaveEffect
+      lifetime: 60
+	  startDelay: 90
+      sizeTo: 0
+	  sizeFrom: 128
+	  strokeFrom: 8
+	  strokeTo: 0
+      colorFrom: 002222
+      colorTo: 00ffff
     }
   ]
 }
