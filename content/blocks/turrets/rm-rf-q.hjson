@@ -148,7 +148,10 @@ drawer: {
                         moveY: 4
                         progress: {
                                 type: warmup
-                                ops: [{ op: compress, start: 0.0, end: 0.3 }, { op: curve, interp: circleIn }]
+                                ops: [
+									{ op: compress, start: 0.0, end: 0.3 },
+									{ op: curve, interp: circleIn }
+								]
                         }
                 }
                 {
