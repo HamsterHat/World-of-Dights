@@ -56,6 +56,7 @@ destroyBullet: {
     absorbable: false
     collides: false
 	status: glitched
+	despawnHit: true
 	fragBullets: 100
 	fragBullet: {
 		type: RailBulletType
