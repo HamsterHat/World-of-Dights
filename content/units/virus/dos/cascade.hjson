@@ -3,12 +3,15 @@ speed: 0.6283185307179586
 health: 128
 armor: 4
 range: 128
+flying: true
+
   
 weapons: [
   {
     name: cascade-launcher
     x: 2
     y: 0
+    faceTarget: false
     shoot: {
       type: ShootSpread
       shots: 6
