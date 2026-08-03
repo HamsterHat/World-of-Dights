@@ -1,7 +1,7 @@
 type: CoreBlock
 size: 3
 health: 2048
-armor: 5
+armor: 8
 itemCapacity: 4096
 
 unitType: system
