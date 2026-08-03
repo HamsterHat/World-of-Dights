@@ -1,5 +1,5 @@
 type: mech
-speed: 0.7
+speed: 0.8
 health: 32
 controller: SuicideAI
 
@@ -35,7 +35,7 @@ weapons: [
 
   {
     shootCone: 360
-    reload: 60
+    reload: 30
     alwaysShooting: true
     bullet: {
         type: EmptyBulletType
@@ -43,7 +43,8 @@ weapons: [
         smokeEffect: none
         hitEffect: none
         despawnHit: true
-        recoil: -2
+        recoil: -4
+        lifetime: 0
     }
   }
 ]
@@ -53,7 +54,7 @@ immunities: [ glitched, chkrootkitDamage, reaperDamage ]
 abilities: [
   {
     type: MoveEffectAbility
-    interval: 4
+    interval: 2
     effect: {
       type: MultiEffect
       effects: [
