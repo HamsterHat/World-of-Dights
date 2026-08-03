@@ -5,6 +5,7 @@
   difficulty: 1
   captureWave: 21
   alwaysUnlocked: false
+addStartingItems: false
   noLighting: true
  research: {
 	parent: unix
