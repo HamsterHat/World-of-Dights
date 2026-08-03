@@ -50,4 +50,42 @@ weapons: [
 
 immunities: [ glitched, chkrootkitDamage, reaperDamage ]
 
+abilities: [
+  {
+    type: MoveEffectAbility
+    interval: 4
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          line: false
+          particles: 1
+          length: 2
+          lifetime: 25
+          sizeFrom: 2
+          sizeTo: 0
+          colorFrom: 00ffffff
+          colorTo: ff003300
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 1
+          lifetime: 15
+          length: 6
+          cone: 20
+          strokeFrom: 1
+          strokeTo: 0
+          lenFrom: 6
+          lenTo: 1
+          colorFrom: ff0033ff
+          colorTo: 00ffff00
+        }
+      ]
+    }
+  }
+]
+
+
 
