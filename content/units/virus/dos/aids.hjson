@@ -1,0 +1,190 @@
+type: legs
+speed: 0.15707963267948966
+health: 256
+armor: 16
+
+legCount: 8
+legGroupSize: 3
+legPairOffset: 0.4
+legContinuousMove: true
+legLength: 32.0
+legLengthScl: 0.95
+legMaxLength: 2.0
+legMinLength: 0.4
+legSpeed: 0.15
+legForwardScl: 1.2
+legBaseOffset: 6.0
+legMoveSpace: 1.1
+legSplashDamage: 32.0
+legSplashRange: 16.0
+flipLegSide: true
+legBaseUnder: true
+lockLegBase: false
+range: 128
+weapons: [
+  {
+    name: encrypt-gun
+    x: 5
+    y: 0
+    shoot: {
+      type: ShootSpread
+      shots: 6
+      spread: 2
+    }
+    rotate: true
+    rotateSpeed: 0.9
+    reload: 160
+    mirror: true
+    bullet: {
+      type: EmpBulletType
+      scaleLife: true
+      suppressionRange: 32
+      suppressionDuration: 256
+      suppressionEffectChance: 2048
+      suppressColor: ff0000
+        frontColor: ff0000
+        backColor: 0000ff
+        width: 8
+        height: 8
+      damage: 8
+      despawnHit: true
+      splashDamage: 8
+      splashDamageRadius: 32
+      status: encrypt
+      statusDuration: 8192
+        lifetime: 64
+        speed: 2
+        radius: 64
+      timeIncrease: 1
+      timeDuration: 512
+      powerDamageScl: 2
+      powerSclDecrease: 0
+      unitDamageScl: 0.05
+      buildingDamageMultiplier: 1.25
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 18
+            sizeFrom: 0
+            sizeTo: 18
+            strokeFrom: 2
+            strokeTo: 0
+            sides: 4
+            colorFrom: ff0000ff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: false
+            particles: 8
+            length: 24
+            lifetime: 30
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 0000ffff
+            colorTo: ff000000
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 6
+            lifetime: 20
+            length: 16
+            cone: 360
+            strokeFrom: 1.5
+            strokeTo: 0
+            lenFrom: 4
+            lenTo: 4
+            colorFrom: ffffffff
+            colorTo: ff000000
+          }
+        ]
+      }
+      makeFire: true
+
+    }
+  }
+
+  {
+    name: encrypt-laser
+    x: 3
+    y: 2
+    shoot: {
+		  shots: 3
+		  firstShotDelay: 25
+      shotDelay: 6
+	  }
+    rotate: true
+    rotateSpeed: 1.2
+    reload: 90
+    mirror: true
+    bullet: {
+      type: LaserBulletType
+      suppressionRange: 8
+      suppressionDuration: 64
+      suppressionEffectChance: 2048
+      suppressColor: ff0000
+      damage: 8
+      despawnHit: true
+      status: encrypt
+      statusDuration: 8192
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 18
+            sizeFrom: 0
+            sizeTo: 18
+            strokeFrom: 2
+            strokeTo: 0
+            sides: 4
+            colorFrom: ff0000ff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: false
+            particles: 8
+            length: 24
+            lifetime: 30
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 0000ffff
+            colorTo: ff000000
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 6
+            lifetime: 20
+            length: 16
+            cone: 360
+            strokeFrom: 1.5
+            strokeTo: 0
+            lenFrom: 4
+            lenTo: 4
+            colorFrom: ffffffff
+            colorTo: ff000000
+          }
+        ]
+      }
+      chargeEffect: {
+        type: WaveEffect
+            lifetime: 25
+            sizeFrom: 64
+            sizeTo: 0
+            strokeFrom: 0
+            strokeTo: 8
+            sides: 360
+            colorFrom: ff0000ff
+            colorTo: 0000ffff
+      }
+      colors: [00ff00ff, 0000ffff, ff0000ff ]	
+    }
+  }
+]
+
+immunities: [glitched, reaperDamage, chkrootkitDamage]
