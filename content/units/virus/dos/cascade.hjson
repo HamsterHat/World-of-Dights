@@ -1,5 +1,5 @@
 type: flying
-speed: 0.6283185307179586
+speed: 0.9424777960769379
 health: 128
 armor: 4
 range: 128
@@ -18,9 +18,10 @@ weapons: [
       spread: 5
     }
     rotate: true
-    rotateSpeed: 1.4
+    rotateSpeed: 2.1
     reload: 120
     mirror: true
+    shootCone: 360
     bullet: {
       type: MissileBulletType
       scaleLife: true
