@@ -1,0 +1,71 @@
+type: flying
+speed: 0.6283185307179586
+health: 128
+armor: 4
+range: 128
+  
+weapons: [
+  {
+    name: cascade-launcher
+    x: 2
+    y: 0
+    shoot: {
+      type: ShootSpread
+      shots: 6
+      spread: 5
+    }
+    rotate: true
+    rotateSpeed: 1.4
+    reload: 60
+    mirror: true
+    bullet: {
+      type: MissileBulletType
+      scaleLife: true
+        frontColor: ff9557
+        backColor:  bf405c
+        width: 3
+        height: 8
+      damage: 8
+      despawnHit: true
+      splashDamage: 8
+      splashDamageRadius: 32
+      status: glitched
+      statusDuration: 512
+        lifetime: 32
+        speed: 4
+        homingPower: 0.2
+        homingRange: 64
+        followAimSpeed: 0.4
+        hitEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      lifetime: 30
+      sizeFrom: 0
+      sizeTo: 64
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: bf40bf
+      colorTo: 702963
+    }
+    {
+      type: ParticleEffect
+      particles: 14
+      length: 48
+      lifetime: 70
+      cone: 360
+      line: false
+      sizeFrom: 3.5
+      sizeTo: 0
+      colorFrom: bf40bf
+      colorTo: 702963
+    }
+  ]
+}
+
+    }
+  }
+]
+
+immunities: [glitched, reaperDamage, chkrootkitDamage]
