@@ -11,8 +11,8 @@ alwaysUnlocked: true
 
 
 requirements: [
-  zero/4096
-  one/4096
+  zero/1024
+  one/1024
 ]
 
 
