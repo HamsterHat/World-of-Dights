@@ -29,7 +29,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 6
-      spread: 2
+      spread: 6
     }
     rotate: true
     rotateSpeed: 0.9
@@ -59,7 +59,7 @@ weapons: [
       timeDuration: 512
       powerDamageScl: 2
       powerSclDecrease: 0
-      unitDamageScl: 0.05
+      unitDamageScl: 1.25
       buildingDamageMultiplier: 1.25
       hitEffect: {
         type: MultiEffect
@@ -182,7 +182,7 @@ weapons: [
             colorFrom: ff0000ff
             colorTo: 0000ffff
       }
-      colors: [00ff00ff, 0000ffff, ff0000ff]
+      colors: [0000ffff, ff0000ff]
 	  makeFire: true
     }
   }
