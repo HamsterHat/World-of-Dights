@@ -10,7 +10,7 @@ ammoTypes: {
   byte: {
     type: BasicBulletType
     speed: 4
-    damage: 0
+    damage: 1
     lifetime: 80
     status: sDamage
     statusDuration: 1
@@ -83,7 +83,7 @@ ammoTypes: {
       ]
     }
     despawnHit: true
-      splashDamage: 0
+      splashDamage: 1
       splashDamageRadius: 64
   }
 }
