@@ -1,0 +1,8 @@
+name: "[scarlet]Зашифрован"
+damage: 0
+disarm: true
+speedMultiplier: 0
+reloadMultiplier: 0
+dragMultiplier: 1000000
+buildSpeedMultiplier: 0
+
