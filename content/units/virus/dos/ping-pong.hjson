@@ -49,7 +49,7 @@ weapons: [
   }
 ]
 
-immunities: [ glitched, chkrootkitDamage, reaperDamage ]
+immunities: [ glitched, chkrootkitDamage, reaperDamage, atDamage]
 
 abilities: [
   {
