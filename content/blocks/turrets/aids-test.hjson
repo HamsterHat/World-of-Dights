@@ -1,0 +1,57 @@
+type: ItemTurret
+size: 1
+health: 256
+range: 200
+reload: 12.0
+targetAir: true
+targetGround: true
+
+ammoTypes: {
+  byte: {
+    type: BasicBulletType
+    speed: 4
+    damage: 1
+    lifetime: 50
+    status: atDamage
+    statusDuration: 1
+    frontColor: 00ffffff
+    backColor: 005555ff
+    width: 4
+    height: 8
+    knockback: 2
+    hitEffect: {
+      type: ParticleEffect
+      particles: 2
+      length: 4
+      lifetime: 15
+      colorFrom: 00ffffff
+      colorTo: 002244ff
+      sizeFrom: 1.0
+      sizeTo: 0.0
+    }
+    despawnHit: true
+  }
+}
+
+requirements: [
+  mov-item/3
+  xor-item/2
+  jmp-item/1
+  cmp-item/1
+]
+
+
+category: turret
+category: turret
+research: {
+  parent: research-asm
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: unix
+    }
+  ]
+}
+researchCostMultiplier: 0
+requiresUnlock: false
