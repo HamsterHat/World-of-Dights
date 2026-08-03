@@ -43,7 +43,7 @@ weapons: [
         smokeEffect: none
         hitEffect: none
         despawnHit: true
-        recoil: -4
+        recoil: -12
         lifetime: 0
     }
   }
