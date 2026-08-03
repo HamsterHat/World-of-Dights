@@ -92,5 +92,5 @@ weapons: [
   }
 ]
 
-immunities: [glitched, reaperDamage]
+immunities: [glitched, reaperDamage, atDamage]
 
