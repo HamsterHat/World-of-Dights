@@ -1,0 +1,405 @@
+type: PowerTurret
+size: 2
+health: 64
+range: 140
+shootSound: rm-shoot
+ambientSound: rm-charge
+ambientSoundVolume: 1.2
+shootEffect: shootBig
+rotateSpeed: 0
+reload: 170
+recoil: 0
+shootCone: 360
+shootY: 0
+linearWarmup: true
+alwaysShooting: true
+minWarmup: 1
+shootWarmupSpeed: 0.0010416666
+cooldownTime: 160
+
+
+rotate: false
+quickRotate: false
+
+shoot: {
+	type: ShootSpread
+	shots: 1
+}
+
+
+
+
+
+shootType: {
+	type: BulletType
+	lifetime: 0
+	absorbable: false
+	hittable: false
+	despawnEffect: none
+	collides: false
+	killShooter: true
+	status: remove
+	splashDamage: 9999999999999999999999999999999999
+	splashDamageRadius: 140
+}
+
+destroyBullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    splashDamage: 999
+    splashDamageRadius: 140
+    instantDisappear: true
+    hitEffect: none
+    despawnEffect: none
+    hittable: false
+    absorbable: false
+    collides: false
+	status: glitched
+	despawnHit: true
+	fragBullets: 100
+	fragBullet: {
+		type: RailBulletType
+		damage: 99
+		status: glitched
+		statusDuration: 999
+		pierce: false
+		hitEffect: {
+	      type: ParticleEffect
+	      particles: 64
+	      lifetime: 99
+	      length: 65
+	      colorFrom: 00ffff88
+	      colorTo: 00ff0088
+	      sizeFrom: 3
+		  sizeTo: 0
+	    }
+		pierceEffect: none
+		pointEffect: {
+	      type: ParticleEffect
+	      particles: 1
+	      lifetime: 8
+	      length: 0.01
+		  baseLength: 0.01
+	      colorFrom: 00ffff
+	      colorTo: 00ff00
+	      strokeFrom: 8
+		  strokeTo: 0
+		  line: true
+		  cone: 0
+		  lenFrom: 20
+		  lenTo: 20
+	    }
+		length: 120
+		pointEffectSpace: 20
+	    createChance: 0.1
+		knockback: 8
+		buildingDamageMultiplier: 2.75
+	}
+}
+
+destroyEffect: {
+  type: MultiEffect
+  effects: [
+	{
+      type: ParticleEffect
+      particles: 1
+      lifetime: 15
+      length: 0
+      colorFrom: 0000ffff
+      colorTo: 00ffffff
+      sizeFrom: 140
+	  sizeTo: 140
+    }
+	{
+      type: ParticleEffect
+      particles: 1
+      lifetime: 15
+	  startDelay: 15
+      length: 0
+      colorFrom: 00ffffff
+      colorTo: ff0000ff
+      sizeFrom: 140
+	  sizeTo: 140
+    }
+	{
+      type: ParticleEffect
+      particles: 1
+      lifetime: 15
+	  startDelay: 30
+      length: 0
+      colorFrom: ff0000ff
+      colorTo: 0000ffff
+      sizeFrom: 140
+	  sizeTo: 0
+    }
+    {
+      type: WaveEffect
+      lifetime: 90
+      sizeTo: 140
+	  sizeFrom: 140
+	  strokeFrom: 8
+	  strokeTo: 8
+      colorFrom: 00ffffff
+      colorTo: 002222ff
+    }
+	{
+      type: WaveEffect
+      lifetime: 60
+	  startDelay: 90
+      sizeTo: 0
+	  sizeFrom: 140
+	  strokeFrom: 8
+	  strokeTo: 0
+      colorFrom: 002222ff
+      colorTo: 00ffffff
+    }
+{
+            type: WaveEffect
+            lifetime: 14
+            layer: 101
+            sizeFrom: 4
+            sizeTo: 140
+            strokeFrom: 3
+            strokeTo: 8
+            colorFrom: f68021
+            colorTo: db661c00
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            layer: 101
+            interp: pow3
+            baseLength: 10
+            length: 55
+            particles: 22
+            sizeFrom: 8
+            sizeTo: 0
+            colorFrom: 6e7080
+            colorTo: 565666
+        }
+        {
+            type: ParticleEffect
+            lifetime: 85
+            layer: 101
+            interp: pow5Out
+            sizeInterp: pow5In
+            baseLength: 14
+            length: 85
+            particles: 25
+            sizeFrom: 6
+            sizeTo: 0
+            colorFrom: 7f7f7fff
+            colorTo: 3f3f3fff
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow5In
+            baseLength: 24
+            length: 95
+            particles: 14
+            sizeFrom: 1.2
+            sizeTo: 0
+            colorFrom: 7f7f7fff
+            colorTo: 3f3f3fff
+        }
+        {
+            type: ParticleEffect
+            lifetime: 55
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 95
+            line: true
+            particles: 35
+            strokeFrom: 1.25
+            strokeTo: 0
+            lenFrom: 7
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 75
+            line: true
+            particles: 24
+            strokeFrom: 2.5
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
+  ]
+}
+
+drawer: {
+  type: DrawTurret
+  parts: [
+	{
+      type: RegionPart
+      suffix: "-glow-core"
+      color: 00ffff
+      growX: 1.5
+      growY: 1.5
+	  outline: false
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.6
+				end: 0.85
+				interp: circleIn
+			}
+        ]
+      }
+    }
+	{
+      type: RegionPart
+      suffix: "-inner-hatch-left"
+      moveX: -5
+	  x: -2
+	  y: 0
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.3
+				end: 0.6
+				interp: circleIn
+			}
+        ]
+      }
+    }
+{
+      type: RegionPart
+      suffix: "-inner-hatch-right"
+      moveX: 5
+	  x: 2
+	  y: 0
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.3
+				end: 0.6
+				interp: circleIn
+			}
+        ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-hatch-top-left"
+      moveX: -4
+      moveY: 4
+	  x: -4
+      y: 4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+				interp: circleIn
+			}
+        ]
+      }
+    }
+	{
+      type: RegionPart
+      suffix: "-hatch-top-right"
+      moveX: 4
+      moveY: 4
+	  x: 4
+      y: 4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+				interp: circleIn
+			}
+        ]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: "-hatch-bottom-left"
+      moveX: -4
+      moveY: -4
+	  x: -4
+	  y: -4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+				interp: circleIn
+			}
+        ]
+      }
+    }
+	{
+      type: RegionPart
+      suffix: "-hatch-bottom-right"
+      moveX: 4
+      moveY: -4
+	  x: 4
+	  y: -4
+      progress: {
+        type: warmup
+        ops: [
+         	{
+				op: compress
+				start: 0.0
+				end: 0.3
+				interp: circleIn
+			}
+        ]
+      }
+    }
+  ]
+}
+
+
+requirements: [
+  mov-item/4
+  xor-item/2
+  jmp-item/3
+  cmp-item/2
+]
+
+
+
+
+category: effect
+
+research: {
+  parent: research-asm
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: unix
+    }
+  ]
+}
