@@ -189,3 +189,36 @@ weapons: [
 ]
 
 immunities: [glitched, reaperDamage, chkrootkitDamage]
+
+abilities: [
+{
+type: EnergyFieldAbility
+damage: 0
+reload: 18
+range: 128
+healEffect: none
+status: slow
+statusDuration: 1024
+maxTargets: 8192
+healPercent: 0
+sameTypeHealMult: 0
+shootSound: none
+color: 0000ff
+useAmmo: false
+}
+{
+type: EnergyFieldAbility
+damage: 0
+	reload: 18
+range: 64
+healEffect: none
+status: encrypt
+statusDuration: 1024
+maxTargets: 8192
+healPercent: 0
+sameTypeHealMult: 0
+shootSound: none
+color: ff0000
+useAmmo: false
+}
+]
