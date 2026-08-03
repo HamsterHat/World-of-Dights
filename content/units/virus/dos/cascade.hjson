@@ -16,7 +16,7 @@ weapons: [
     }
     rotate: true
     rotateSpeed: 1.4
-    reload: 60
+    reload: 120
     mirror: true
     bullet: {
       type: MissileBulletType
