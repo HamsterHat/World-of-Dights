@@ -182,7 +182,8 @@ weapons: [
             colorFrom: ff0000ff
             colorTo: 0000ffff
       }
-      colors: [00ff00ff, 0000ffff, ff0000ff ]	
+      colors: [00ff00ff, 0000ffff, ff0000ff]
+	  makeFire: true
     }
   }
 ]
