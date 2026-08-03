@@ -399,7 +399,7 @@ research: {
   objectives: [
     {
     type: OnSector
-    preset: unix
+    preset: dos
     }
   ]
 }
