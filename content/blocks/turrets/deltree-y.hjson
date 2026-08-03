@@ -3,8 +3,6 @@ size: 2
 health: 64
 range: 140
 shootSound: rm-shoot
-ambientSound: rm-charge
-ambientSoundVolume: 1.2
 shootEffect: shootBig
 rotateSpeed: 0
 reload: 170
