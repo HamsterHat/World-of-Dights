@@ -72,4 +72,4 @@ weapons: [
   }
 ]
 
-immunities: [glitched, reaperDamage, chkrootkitDamage]
+immunities: [glitched, reaperDamage, chkrootkitDamage, atDamage]
