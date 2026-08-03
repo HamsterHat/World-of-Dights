@@ -1,0 +1,111 @@
+type: ItemTurret
+size: 3
+health: 512
+range: 320
+reload: 256
+targetAir: true
+targetGround: true
+
+ammoTypes: {
+  byte: {
+    type: BasicBulletType
+    speed: 4
+    damage: 0
+    lifetime: 80
+    status: sDamage
+    statusDuration: 1
+    frontColor: 00ffffff
+    backColor: 005555ff
+    width: 8
+    height: 16
+    knockback: 4
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 96
+          strokeFrom: 8
+          strokeTo: 0
+          sides: 4
+          colorFrom: ffffffff
+          colorTo: 0000ffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 35
+          sizeFrom: 16
+          sizeTo: 140
+          strokeFrom: 4
+          strokeTo: 0
+          sides: 0
+          colorFrom: 0000ffff
+          colorTo: ff000000
+        }
+        {
+          type: ParticleEffect
+          line: false
+          particles: 18
+          length: 110
+          lifetime: 50
+          sizeFrom: 5
+          sizeTo: 0
+          colorFrom: ffffffff
+          colorTo: 0000ff00
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 25
+          lifetime: 40
+          length: 160
+          cone: 360
+          strokeFrom: 3
+          strokeTo: 0
+          lenFrom: 20
+          lenTo: 4
+          colorFrom: 0000ffff
+          colorTo: ff000000
+        }
+        {
+          type: ParticleEffect
+          line: false
+          particles: 12
+          length: 60
+          lifetime: 60
+          sizeFrom: 4
+          sizeTo: 1
+          colorFrom: ff0000ff
+          colorTo: 00000000
+        }
+      ]
+    }
+    despawnHit: true
+      splashDamage: 0
+      splashDamageRadius: 64
+  }
+}
+
+requirements: [
+  mov-item/15
+  xor-item/8
+  jmp-item/10
+  cmp-item/12
+]
+
+
+category: turret
+research: {
+  parent: research-asm
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: unix
+    }
+  ]
+}
+  
+requiresUnlock: false
