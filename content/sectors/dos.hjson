@@ -1,0 +1,19 @@
+  type: SectorPreset
+  planet: cyberia
+  name: "dos"
+  sector: 1
+  difficulty: 1
+  captureWave: 21
+  alwaysUnlocked: false
+  noLighting: true
+ research: {
+	parent: unix
+		objectives: [
+			{
+				type: SectorComplete
+				preset: unix
+			}
+		]
+}
+
+
