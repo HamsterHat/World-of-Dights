@@ -1,4 +1,4 @@
-damage: 256
+damage: 128
 speedMultiplier: -1
 healthMultiplier: 0.64
 damageMultiplier: 0.1
