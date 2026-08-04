@@ -1,0 +1,9 @@
+research: {
+  parent: research-c
+  requirements: [
+    c-icl-item/32
+    c-key-item/16
+    c-var-item/32
+  ]
+}
+show: false
