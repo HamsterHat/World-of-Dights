@@ -1,0 +1,50 @@
+results: [
+  c-icl-item/1
+  c-key-item/1
+  c-var-item/1
+  c-op-item/1
+  c-void-item/1
+]
+
+type: Separator
+size: 2
+health: 256
+hasItems: true
+itemCapacity: 64
+
+
+craftTime: 64
+
+
+consumes: {
+  items: [
+    one/1
+    zero/1
+  ]
+}
+
+
+
+
+
+requirements: [
+  c-icl-item/8
+  c-key-item/16
+  c-var-item/16
+  c-op-item/8
+  c-void-item/4
+]
+
+
+category: crafting
+research: {
+  parent: research-c
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: dos
+    }
+  ]
+}
+researchCostMultiplier: 0
