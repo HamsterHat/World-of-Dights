@@ -110,8 +110,8 @@ effects: [
 
 {
 type: ParticleEffect
-colorFrom: 0000ff
-colorTo: ff0000
+colorFrom: 00ffff
+colorTo: ffffff
 particles: 1
 randLength: false
 cone: 0
@@ -130,12 +130,12 @@ lifetime: 40
 
 {
 type: ParticleEffect
-colorFrom: ff0000
+colorFrom: ffffff
 colorTo: ff00ff
 particles: 1
 randLength: false
 cone: 0
-length: 32
+length: -32
 baseLength: 0.01
 offsetX: 0
 offsetY: 32
@@ -150,14 +150,14 @@ baseRotation: 90
 
 {
 type: ParticleEffect
-colorFrom: ff0000
-colorTo: ff00ff
+colorFrom: 00ffff
+colorTo: ffffff
 particles: 64
 randLength: true
 cone: 360
-length: -64
+length: -128
 sizeFrom: 0
-sizeTo: 8
+sizeTo: 4
 rotWithParent: true
 startDelay: 60
 lifetime: 20
