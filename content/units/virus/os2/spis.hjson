@@ -1,0 +1,142 @@
+type: legs
+speed: 0.3141592653589793
+health: 1024
+armor: 8
+
+legCount: 6
+legGroupSize: 3
+legPairOffset: 0.4
+legContinuousMove: true
+legLength: 32.0
+legLengthScl: 0.95
+legMaxLength: 2.0
+legMinLength: 0.4
+legSpeed: 0.15
+legForwardScl: 1.2
+legBaseOffset: 6.0
+legMoveSpace: 1.1
+legSplashDamage: 32.0
+legSplashRange: 16.0
+flipLegSide: true
+legBaseUnder: true
+lockLegBase: false
+range: 128
+weapons: [
+  {
+    name: timed-gun
+    x: 5
+    y: 0
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 8
+    }
+    rotate: true
+    rotateSpeed: 0.9
+    reload: 128
+    mirror: true
+    bullet: {
+      type: EmpBulletType
+      scaleLife: true
+      suppressionRange: 32
+      suppressionDuration: 256
+      suppressionEffectChance: 2048
+      suppressColor: 0000ff
+        frontColor: 00ffff
+        backColor: 0000ff
+        width: 16
+        height: 16
+      damage: 8
+      despawnHit: true
+      splashDamage: 16
+      splashDamageRadius: 64
+      status: timed
+      statusDuration: 8192
+        lifetime: 64
+        speed: 2
+        radius: 64
+      timeIncrease: 1
+      timeDuration: 256
+      powerDamageScl: 2
+      powerSclDecrease: 0
+      unitDamageScl: 1.25
+      buildingDamageMultiplier: 3.56
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 18
+            sizeFrom: 0
+            sizeTo: 18
+            strokeFrom: 2
+            strokeTo: 0
+            sides: 4
+            colorFrom: 00ffff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: false
+            particles: 8
+            length: 24
+            lifetime: 30
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 0000ffff
+            colorTo: 00ffff00
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 6
+            lifetime: 20
+            length: 16
+            cone: 360
+            strokeFrom: 1.5
+            strokeTo: 0
+            lenFrom: 4
+            lenTo: 4
+            colorFrom: ffffffff
+            colorTo: ff000000
+          }
+        ]
+      }
+      makeFire: true
+
+    }
+  }
+]
+
+immunities: [glitched, reaperDamage, chkrootkitDamage, atDamage]
+
+abilities: [
+{
+type: EnergyFieldAbility
+damage: 0
+reload: 120
+range: 128
+healEffect: none
+status: glitched
+statusDuration: 1024
+maxTargets: 8192
+healPercent: 0
+sameTypeHealMult: 0
+shootSound: none
+color: ff00ff
+useAmmo: false
+}
+{
+    type: ShieldArcAbility
+    radius: 360
+  regen: 0.26666666666666666
+  max: 1024
+  cooldown: 1024
+  whenShooting: false
+  width: 4
+  chanceDeflect: 0.75
+  reflectVel: 2
+  reflectTime: 2
+  color: 00ffffff
+}
+]
