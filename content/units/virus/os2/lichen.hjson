@@ -1,0 +1,107 @@
+type: legs
+speed: 1.6415926535897931
+health: 64
+armor: 4
+
+legCount: 3
+legGroupSize: 3
+legPairOffset: 0.4
+legContinuousMove: true
+legLength: 12.0
+legLengthScl: 0.95
+legMaxLength: 2.0
+legMinLength: 0.4
+legSpeed: 0.4
+legForwardScl: 1.2
+legBaseOffset: 6.0
+legMoveSpace: 1.1
+legSplashDamage: 8.0
+legSplashRange: 8.0
+flipLegSide: true
+legBaseUnder: true
+lockLegBase: false
+range: 64
+weapons: [
+  {
+    name: sus-gun
+    x: 5
+    y: 0
+    shoot: {
+      type: ShootSpread
+      shots: 6
+      spread: 6
+    }
+    rotate: true
+    rotateSpeed: 3.141592653589793
+    reload: 60
+    mirror: true
+    bullet: {
+      type: BasicBulletType
+      scaleLife: true
+      suppressionRange: 16
+      suppressionDuration: 64
+      suppressionEffectChance: 1024
+      suppressColor: ff00ff
+        frontColor: ff00ff
+        backColor: 0000ff
+        width: 6
+        height: 6
+      damage: 16
+      despawnHit: true
+      splashDamage: 16
+      splashDamageRadius: 32
+      status: glitched
+      statusDuration: 256
+        lifetime: 32
+        speed: 2
+        radius: 64
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 18
+            sizeFrom: 0
+            sizeTo: 18
+            strokeFrom: 2
+            strokeTo: 0
+            sides: 4
+            colorFrom: ff0000ff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: false
+            particles: 8
+            length: 24
+            lifetime: 30
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 0000ffff
+            colorTo: ff000000
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 6
+            lifetime: 20
+            length: 16
+            cone: 360
+            strokeFrom: 1.5
+            strokeTo: 0
+            lenFrom: 4
+            lenTo: 4
+            colorFrom: ffffffff
+            colorTo: ff000000
+          }
+        ]
+      }
+      makeFire: true
+
+    }
+  }
+
+]
+
+immunities: [glitched, reaperDamage, chkrootkitDamage, atDamage]
+
