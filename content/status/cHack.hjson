@@ -7,14 +7,16 @@ healthMultiplier: 0.5
 damageMultiplier: -0.2
 reloadMultiplier: 0.2
 dragMultiplier: -0.001
+
   
 effect: {
   type: ParticleEffect
   particles: 2
   length: 4
-  lifetime: 15
-  colorFrom: 00ffffff
-  colorTo: 002244ff
+  lifetime: 16
+  colorFrom: ff0000ff
+  colorTo: 0000ffff
   sizeFrom: 1.0
   sizeTo: 0.0
 }
+
