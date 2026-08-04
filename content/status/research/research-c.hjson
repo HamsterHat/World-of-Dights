@@ -1,0 +1,17 @@
+research: {
+  parent: research-asm
+  requirements: [
+    mov-item/512
+    xor-item/256
+    cmp-item/128
+    jmp-item/128
+  ]
+  objectives: [
+    {
+    type: OnSector
+    preset: dos
+    }
+  ]
+}
+
+show: false
