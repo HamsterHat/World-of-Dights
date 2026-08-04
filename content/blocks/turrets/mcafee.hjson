@@ -1,0 +1,151 @@
+type: ItemTurret
+size: 3
+health: 512
+range: 320
+reload: 256
+targetAir: true
+targetGround: true
+
+ammoTypes: {
+  byte: {
+    type: RailBulletType
+    damage: 1
+    status: mcaDamage
+    statusDuration: 1
+    knockback: 8
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 32
+          sizeFrom: 0
+          sizeTo: 128
+          strokeFrom: 8
+          strokeTo: 0
+          sides: 4
+          colorFrom: ffffffff
+          colorTo: 0000ffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 32
+          sizeFrom: 16
+          sizeTo: 128
+          strokeFrom: 4
+          strokeTo: 0
+          sides: 0
+          colorFrom: 0000ffff
+          colorTo: ff000000
+        }
+        {
+          type: ParticleEffect
+          line: false
+          particles: 16
+          length: 128
+          lifetime: 64
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: ffffffff
+          colorTo: 0000ff00
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 32
+          lifetime: 32
+          length: 128
+          cone: 360
+          strokeFrom: 4
+          strokeTo: 0
+          lenFrom: 16
+          lenTo: 4
+          colorFrom: 0000ffff
+          colorTo: ff000000
+        }
+        {
+          type: ParticleEffect
+          line: false
+          particles: 16
+          length: 64
+          lifetime: 64
+          sizeFrom: 4
+          sizeTo: 1
+          colorFrom: ff0000ff
+          colorTo: 00000000
+        }
+      ]
+    }
+      splashDamage: 1
+      splashDamageRadius: 64
+      pierce: true
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 16
+            sizeFrom: 0
+            sizeTo: 32
+            strokeFrom: 4
+            strokeTo: 0
+            sides: 0
+            colorFrom: ffffffff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 8
+            lifetime: 16
+            length: 24
+            cone: 45
+            strokeFrom: 2
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 2
+            colorFrom: ff0000ff
+            colorTo: 0000ffff
+          }
+        ]
+      }
+      pointEffect: {
+	      type: ParticleEffect
+	      particles: 1
+	      lifetime: 8
+	      length: 0.01
+		    baseLength: 0.01
+	      colorFrom: ff0000
+	      colorTo: 0000ff
+	      strokeFrom: 8
+  		  strokeTo: 0
+  		  line: true
+  		  cone: 0
+  		  lenFrom: 20
+  		  lenTo: 20
+	    }
+      length: 320
+  }
+}
+
+requirements: [
+  c-icl-item/8
+  c-key-item/16
+  c-opr-item/32
+  c-wdf-item/4
+]
+
+
+category: turret
+research: {
+  parent: research-c
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: dos
+    }
+  ]
+}
+  
+requiresUnlock: false
