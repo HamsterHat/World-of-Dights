@@ -127,16 +127,11 @@ color: ff00ff
 useAmmo: false
 }
 {
-    type: ShieldArcAbility
-    radius: 360
-  regen: 0.26666666666666666
-  max: 1024
-  cooldown: 1024
-  whenShooting: false
-  width: 4
-  chanceDeflect: 0.75
-  reflectVel: 2
-  reflectTime: 2
-  color: 00ffffff
+    type: ForceFieldAbility
+radius: 16
+regen: 0.26666666666666666
+max: 1024
+cooldown: 512
+sides: 4
 }
 ]
