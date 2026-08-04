@@ -1,0 +1,15 @@
+type: Wall
+size: 1
+health: 8192
+
+requirements: [
+  c-icl-item/32
+  c-keyword-item/16
+  c-var-item/8
+]
+
+category: defense
+research: {
+  parent: c-wall
+  requirements: []
+}
