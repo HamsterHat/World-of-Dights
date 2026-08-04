@@ -1,5 +1,5 @@
 type: Wall
-size: 1
+size: 2
 health: 8192
 
 requirements: [
