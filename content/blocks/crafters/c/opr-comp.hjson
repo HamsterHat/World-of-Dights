@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 1
+health: 64
+hasItems: true
+itemCapacity: 8
+
+
+craftTime: 32
+
+
+consumes: {
+  items: [
+    jmp-item/2
+  ]
+}
+
+
+
+
+outputItem: c-opr-item/1
+
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 4
+  length: 12
+  lifetime: 24
+  colorFrom: 00ffffff
+  colorTo: 001111ff
+  sizeFrom: 1.5
+  sizeTo: 0
+}
+
+
+requirements: [
+  jmp-item/2
+]
+
+category: crafting
+research: research-c
+researchCostMultiplier: 0
