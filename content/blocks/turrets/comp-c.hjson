@@ -1,0 +1,116 @@
+type: ItemTurret
+size: 4
+health: 1024
+range: 640
+reload: 512
+targetAir: true
+targetGround: true
+
+ammoTypes: {
+  c-wdf-item: {
+    type: RailBulletType
+    damage: 1
+    status: cHack
+    statusDuration: 256
+    knockback: 16
+    hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 16
+            sizeFrom: 0
+            sizeTo: 64
+            strokeFrom: 4
+            strokeTo: 0
+            sides: 4
+            colorFrom: ffffffff
+            colorTo: 0000ffff
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 16
+            length: 96
+            cone: 360
+            lenFrom: 16
+            lenTo: 4
+            colorFrom: 0000ffff
+            colorTo: ff0000ff
+          }
+        ]
+      }
+      splashDamage: 1
+      splashDamageRadius: 32
+      pierce: true
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 8
+            sizeFrom: 0
+            sizeTo: 32
+            strokeFrom: 4
+            strokeTo: 0
+            sides: 4
+            colorFrom: ffffffff
+            colorTo: ff0000ff
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 4
+            lifetime: 16
+            length: 16
+            cone: 90
+            strokeFrom: 2
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: 0000ffff
+            colorTo: ff0000ff
+          }
+        ]
+      }
+      pointEffect: {
+	      type: ParticleEffect
+	      particles: 1
+	      lifetime: 32
+	      length: 0.01
+		    baseLength: 0.01
+	      colorFrom: ff0000
+	      colorTo: 0000ff
+	      strokeFrom: 16
+  		  strokeTo: 0
+  		  line: true
+  		  cone: 0
+  		  lenFrom: 20
+  		  lenTo: 20
+	    }
+      length: 320
+  }
+}
+
+requirements: [
+  c-icl-item/16
+  c-key-item/8
+  c-opr-item/16
+  c-wdf-item/8
+]
+
+
+category: turret
+research: {
+  parent: research-c
+  requirements: []
+  objectives: [
+    {
+    type: OnSector
+    preset: dos
+    }
+    studio-h
+  ]
+}
+  
+requiresUnlock: false
