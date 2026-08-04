@@ -5,6 +5,14 @@ range: 640
 reload: 512
 targetAir: true
 targetGround: true
+moveWhileCharging: false
+reloadWhileCharging: false
+
+shoot: {
+	shots: 1
+	firstShotDelay: 80
+	shotDelay: 0
+}
 
 ammoTypes: {
   c-wdf-item: {
@@ -89,6 +97,86 @@ ammoTypes: {
   		  lenTo: 20
 	    }
       length: 320
+
+
+
+
+
+
+
+chargeEffect: {
+type: MultiEffect
+effects: [
+
+{
+type: ParticleEffect
+colorFrom: 0000ff
+colorTo: ff0000
+particles: 1
+randLength: false
+cone: 0
+length: 0
+baseLength: 0
+offsetX: 0
+offsetY: 32
+sizeFrom: 64
+sizeTo: 8
+sizeChangeStart: 20
+region: number-comp-code
+rotWithParent: true
+startDelay: 0
+lifetime: 40
+}
+
+{
+type: ParticleEffect
+colorFrom: ff0000
+colorTo: ff00ff
+particles: 1
+offset: 180
+randLength: false
+cone: 0
+length: 32
+baseLength: 0.01
+offsetX: 0
+offsetY: 32
+sizeFrom: 8
+sizeTo: 8
+region: number-comp-code
+rotWithParent: true
+startDelay: 40
+lifetime: 20
+}
+
+{
+type: ParticleEffect
+colorFrom: ff0000
+colorTo: ff00ff
+particles: 64
+randLength: true
+cone: 360
+length: -64
+sizeFrom: 0
+sizeTo: 8
+rotWithParent: true
+startDelay: 60
+lifetime: 20
+}
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }
 
