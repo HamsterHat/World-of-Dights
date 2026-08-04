@@ -4,7 +4,7 @@ health: 2048
 
 requirements: [
   c-icl-item/8
-  c-keyword-item/4
+  c-key-item/4
   c-var-item/2
 ]
 
