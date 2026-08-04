@@ -133,7 +133,6 @@ type: ParticleEffect
 colorFrom: ff0000
 colorTo: ff00ff
 particles: 1
-offset: 270
 randLength: false
 cone: 0
 length: 32
@@ -146,6 +145,7 @@ region: number-comp-code
 rotWithParent: true
 startDelay: 40
 lifetime: 20
+baseRotation: 90
 }
 
 {
