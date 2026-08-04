@@ -197,7 +197,7 @@ damage: 0
 reload: 18
 range: 128
 healEffect: none
-status: slow
+status: glitched
 statusDuration: 1024
 maxTargets: 8192
 healPercent: 0
