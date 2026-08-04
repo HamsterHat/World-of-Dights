@@ -1,0 +1,19 @@
+  type: SectorPreset
+  planet: cyberia
+  name: "os2"
+  sector: 10
+  difficulty: 3
+  captureWave: 26
+  alwaysUnlocked: false
+addStartingItems: false
+  noLighting: true
+ research: {
+	parent: dos
+		objectives: [
+			{
+				type: SectorComplete
+				preset: dos
+			}
+		]
+}
+
