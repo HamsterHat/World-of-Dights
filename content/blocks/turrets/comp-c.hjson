@@ -89,14 +89,14 @@ ammoTypes: {
 		    baseLength: 0.01
 	      colorFrom: ff0000
 	      colorTo: 0000ff
-	      strokeFrom: 16
+	      strokeFrom: 8
   		  strokeTo: 0
   		  line: true
   		  cone: 0
   		  lenFrom: 20
   		  lenTo: 20
 	    }
-      length: 320
+      length: 640
 
 
 
@@ -133,7 +133,7 @@ type: ParticleEffect
 colorFrom: ff0000
 colorTo: ff00ff
 particles: 1
-offset: 180
+offset: 270
 randLength: false
 cone: 0
 length: 32
