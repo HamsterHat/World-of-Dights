@@ -2,8 +2,8 @@ results: [
   c-icl-item/1
   c-key-item/1
   c-var-item/1
-  c-op-item/1
-  c-void-item/1
+  c-opr-item/1
+  c-wdf-item/1
 ]
 
 type: Separator
@@ -31,8 +31,8 @@ requirements: [
   c-icl-item/8
   c-key-item/16
   c-var-item/16
-  c-op-item/8
-  c-void-item/4
+  c-opr-item/8
+  c-wdf-item/4
 ]
 
 
