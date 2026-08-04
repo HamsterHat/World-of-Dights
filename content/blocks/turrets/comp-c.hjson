@@ -125,40 +125,18 @@ sizeChangeStart: 20
 region: number-comp-code
 rotWithParent: true
 startDelay: 0
-lifetime: 40
+lifetime: 60
 }
 
 {
-type: ParticleEffect
-colorFrom: ffffff
-colorTo: ff00ff
-particles: 1
-randLength: false
-cone: 0
-length: -32
-baseLength: 0.01
-offsetX: 0
-offsetY: 32
-sizeFrom: 8
-sizeTo: 8
-region: number-comp-code
-rotWithParent: true
-startDelay: 40
-lifetime: 20
-baseRotation: 90
-}
-
-{
-type: ParticleEffect
-colorFrom: 00ffff
-colorTo: ffffff
-particles: 64
-randLength: true
-cone: 360
-length: -128
-sizeFrom: 0
-sizeTo: 4
-rotWithParent: true
+type: WaveEffect
+sizeFrom: 64
+sizeTo: 0
+strokeFrom: 4
+strokeTo: 0
+sides: 8
+colorFrom: 00ffffff
+colorTo: ffffffff
 startDelay: 60
 lifetime: 20
 }
