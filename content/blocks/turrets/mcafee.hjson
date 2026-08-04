@@ -112,7 +112,7 @@ ammoTypes: {
       pointEffect: {
 	      type: ParticleEffect
 	      particles: 1
-	      lifetime: 8
+	      lifetime: 32
 	      length: 0.01
 		    baseLength: 0.01
 	      colorFrom: ff0000
