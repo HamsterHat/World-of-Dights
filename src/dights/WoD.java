@@ -3,6 +3,7 @@ package dights;
 import arc.Events;
 import mindustry.game.EventType;
 import mindustry.mod.*;
+import dights.content.*;
 
 
 
@@ -14,6 +15,6 @@ public class WoD extends Mod{
 
     @Override
     public void loadContent(){
-        //bruhh
+        WoDItems.load();
     }
 }
