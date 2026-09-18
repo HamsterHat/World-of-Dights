@@ -1,7 +1,0 @@
-research: {
-  parent: core-asm
-  requirements: [
-    byte/2
-  ]
-}
-show: false
